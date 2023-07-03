@@ -8,6 +8,8 @@
 
 # 参考资料
 
+[JavaGuide(Java面试 + 学习指南)](https://javaguide.cn/about-the-author/zhishixingqiu-two-years.html#简历修改)
+
 [JavaGuide（github 135k）](https://github.com/Snailclimb/JavaGuide/tree/main)
 
 [面试资料(github仓库 8.9k)](https://github.com/wolverinn/Waking-Up)
