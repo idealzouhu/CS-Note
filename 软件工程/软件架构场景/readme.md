@@ -1,0 +1,1 @@
+[软件架构场景实战22讲_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1jA411k7eG/?p=2&spm_id_from=pageDriver&vd_source=52cd9a9deff2e511c87ff028e3bb01d2)
