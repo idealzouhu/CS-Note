@@ -1,3 +1,5 @@
+
+
 # 项目介绍
 
 计算机基础知识总结笔记：总结在大学里学到的计算机知识点（**完善中**）
@@ -14,7 +16,7 @@
 
 [面试资料(github仓库 8.9k)](https://github.com/wolverinn/Waking-Up)
 
-
+[CS-Notes仓库(165k)](https://github.com/CyC2018/CS-Notes/blob/master/README.md)
 
 
 
