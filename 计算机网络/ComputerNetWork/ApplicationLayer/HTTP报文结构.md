@@ -1,3 +1,5 @@
+[TOC]
+
 # 一、HTTP报文结构
 
 HTTP有两类报文:
@@ -55,6 +57,8 @@ HTTP请求报文和响应报文都是由三个部分组成的。可以看出，�
 
 # 三、HTTP响应报文的状态码
 
+## 3.1 响应状态码
+
 HTTP响应报文的状态行包括三项内容，即 HTTP的版本，**状态码**，以及解释状态码的简单短语。
 
 下面三种状态行在响应报文中是经常见到的。
@@ -79,6 +83,12 @@ Http/1.1 404 Not Found          {找不到}
 
 仅记录在 RFC2616 上的 HTTP 状态码就达 40 种，若再加上 WebDAV（Web-based Distributed Authoring and Versioning，基于万维网 的分布式创作和版本控制）（RFC4918、5842） 和附加 HTTP 状态码 （RFC6585）等扩展，数量就达 **60** 余种。但是，**实际上经常使用的大概只有 14 种**。
 
+查询状态码的建议网址主要有：
+
+- [Hypertext Transfer Protocol (HTTP) Status Code Registry (iana.org)](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
+
+- [HTTP 响应状态码 - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
+
 
 
 
@@ -89,8 +99,64 @@ Http/1.1 404 Not Found          {找不到}
 - ~~4xx表示客户的差错，如请求中有错误的语法或不能完成。~~
 - ~~5xx表示服务器的差错，如服务器失效无法完成请求。~~
 
+## 3.2 常见状态码
+
+以 `2xx` 为开头的都表示 请求成功响应。
+
+| 状态码 | 简单短语        | 含义                                                         |
+| ------ | --------------- | ------------------------------------------------------------ |
+| 200    | OK              | 成功响应                                                     |
+| 204    | No Content      | 请求处理成功，但是没有资源可以返回                           |
+| 206    | Partial Content | 客户端进行范围请求，由Content-Range 指定范围的实体内容。服务器对资源某一部分进行响应 |
+
+
+
+以 `3xx` 为开头的都表示 浏览器需要进行附加操作以完成请求
+
+| 状态码 | 简单短语           | 含义                                                         |
+| ------ | ------------------ | ------------------------------------------------------------ |
+| 301    | Moved Permanently  | 永久性重定向，该状态码表示请求的资源已经重新分配 URI，以后应该使用资源现有的 URI |
+| 302    | Found              | 临时性重定向。该状态码表示请求的资源已被分配了新的 URI，希望用户（本次）能使用新的 URI 访问。 |
+| 303    | See Other          | 该状态码表示由于请求对应的资源存在着另一个 URI，客户端应使用 GET 方法定向获取请求的资源。 |
+| 304    | Not Modified       | 该状态码表示客户端发送附带条件的请求时，服务器端允许请求访问资源，但未满足条件的情况。 |
+| 307    | Temporary Redirect | 临时重定向。该状态码与 302 Found 有着相同的含义,   会遵照浏览器标准，不会从POST变成GET |
+
+> 当 301、302、303 响应状态码返回时，几乎所有的浏览器都会把 POST 改成 GET，并删除请求报文内的主体，之后请求会自动再次发送。
+>
+> 301、302 标准是禁止将 POST 方法改变成 GET 方法的，但实际使 用时大家都会这么做。
+
+
+
+以 `4xx` 的响应结果表明客户端是发生错误的原因所在。
+
+| 状态码 | 简单短语     | 含义                                                         |
+| ------ | ------------ | ------------------------------------------------------------ |
+| 400    | Bad Request  | 该状态码表示请求报文中存在语法错误。当错误发生时，需修改请求的内容后再次发送请求。 |
+| 401    | Unauthorized | 该状态码表示发送的请求需要有通过 HTTP 认证（BASIC 认证、DIGEST 认证）的认证信息。 |
+| 403    | Forbidden    | 该状态码表明对请求资源的访问被服务器拒绝了。（原因很有可能是客户端没有访问权限） |
+| 404    | Not Found    | 该状态码表明服务器上无法找到请求的资源。（也可以在服务器端拒绝请求且不想说明理由时使用） |
+
+
+
+以 `5xx` 为开头的响应标头都表示服务器本身发生错误
+
+| 状态码 | 简单短语              | 含义                                                         |
+| ------ | --------------------- | ------------------------------------------------------------ |
+| 500    | Internal Server Error | 该状态码表明服务器端在执行请求时发生了错误。                 |
+| 503    | Service Unavailable   | 该状态码表明服务器暂时处于超负载或正在进行停机维护，现在无法处理请求。 |
+
+
+
 
 
 # 参考资料
 
+[Hypertext Transfer Protocol (HTTP) Status Code Registry (iana.org)](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
+
 计算机网络（第7版）-谢希仁 （书籍）
+
+图解HTTP.上野宣 （书籍）
+
+[看完这篇HTTP，跟面试官扯皮就没问题了   CSDN博客](https://blog.csdn.net/qq_36894974/article/details/103930478?ops_request_misc={"request_id"%3A"168912444016782427479000"%2C"scm"%3A"20140713.130102334.."}&request_id=168912444016782427479000&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-103930478-null-null.142^v88^control_2,239^v2^insert_chatgpt&utm_term=HTTP协议&spm=1018.2226.3001.4187)
+
+[HTTP 响应状态码 - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)

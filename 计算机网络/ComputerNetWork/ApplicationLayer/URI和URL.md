@@ -1,4 +1,4 @@
-# 一、统一资源定位符URI
+# 一、统一资源标识符URI
 
 ## 1.1 什么是URI
 
@@ -42,18 +42,32 @@ urn:oasis:names:specification:docbook:dtd:xml:4.1.2
 
 
 
-# 二、统一资源标识符URL
+# 二、统一资源定位符URL
 
-URL包括协议、主机名、端口号、路径和查询参数。
+URL（Uniform Resource Locator）包括协议、主机名、端口号、路径和查询参数。
+
+
+
+
+
+# 三、统一资源名称URN
+
+
+
+
 
 
 
 # 三、URI和URL联系
 
+URI 不仅包括 URL，还包括 URN（统一资源名称），它们之间的关系如下
 
+![img](images/aHR0cHM6Ly9pbWcyMDE4LmNuYmxvZ3MuY29tL2Jsb2cvMTUxNTExMS8yMDIwMDEvMTUxNTExMS0yMDIwMDExMDIwMTM0MjUwMy02MDIyNDQ1NS5wbmc)
 
 
 
 # 参考资料
 
 图解HTTP.上野宣 （教材）
+
+[看完这篇HTTP，跟面试官扯皮就没问题了-CSDN博客](https://blog.csdn.net/qq_36894974/article/details/103930478?ops_request_misc=%7B%22request%5Fid%22%3A%22168912444016782427479000%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=168912444016782427479000&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-103930478-null-null.142^v88^control_2,239^v2^insert_chatgpt&utm_term=HTTP协议&spm=1018.2226.3001.4187)
