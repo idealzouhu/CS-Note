@@ -2,11 +2,9 @@
 
 # 项目介绍
 
-计算机基础知识总结笔记：总结在大学里学到的计算机知识点（**完善中**）
+计算机基础知识总结笔记：总结在日常学到的计算机知识点（**完善中**）
 
 > 如果笔记中的部分内容涉及侵权，请联系邮箱idealzhouhu@outlook.com
-
-
 
 
 
@@ -20,5 +18,5 @@
 
 [CS-Notes仓库(165k)](https://github.com/CyC2018/CS-Notes/blob/master/README.md)
 
-
+[java生态圈常用技术框架（13.4K）](https://github.com/aalansehaiyang/technology-talk/tree/master)
 
