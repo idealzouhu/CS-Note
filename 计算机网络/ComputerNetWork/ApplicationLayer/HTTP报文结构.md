@@ -81,7 +81,7 @@ Http/1.1 404 Not Found          {找不到}
 | 4xx  | Client Error（客户端错误状态码） | 服务器无法处理请求         |
 | 5xx  | Server Error（服务器错误状态码） | 服务器处理请求出错         |
 
-仅记录在 RFC2616 上的 HTTP 状态码就达 40 种，若再加上 WebDAV（Web-based Distributed Authoring and Versioning，基于万维网 的分布式创作和版本控制）（RFC4918、5842） 和附加 HTTP 状态码 （RFC6585）等扩展，数量就达 **60** 余种。但是，**实际上经常使用的大概只有 14 种**。
+仅记录在 **RFC2616 上的 HTTP 状态码**就达 40 种，若再加上 **WebDAV**（Web-based Distributed Authoring and Versioning，基于万维网 的分布式创作和版本控制）（RFC4918、5842） 和附加 HTTP 状态码 （RFC6585）等扩展，数量就达 **60** 余种。但是，**实际上经常使用的大概只有 14 种**。
 
 查询状态码的建议网址主要有：
 
