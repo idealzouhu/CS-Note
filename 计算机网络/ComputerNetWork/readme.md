@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 # 参考资料
 
 图解HTTP.上野宣（书籍）
@@ -19,4 +15,6 @@
 计算机网络-自顶向下方法第七版（书籍）
 
 计算机网络（第7版）-谢希仁（书籍）
+
+[计算机网络-通熟易懂讲解每个知识要点 _bilibili](https://space.bilibili.com/327247876/channel/collectiondetail?sid=60187)
 
