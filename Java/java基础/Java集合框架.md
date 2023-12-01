@@ -28,14 +28,6 @@
 
 
 
-
-
-
-
-
-
-
-
 需要注意的是，由于Java的集合设计非常久远，中间经历过大规模改进，我们要注意到有一小部分集合类是遗留类，不应该继续使用：
 
 - `Hashtable`：一种线程安全的`Map`实现；
@@ -81,3 +73,5 @@ java集合设计特点：
 # 参考资料
 
 [Java集合简介 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/1252599548343744/1265109905179456)
+
+[The Collections Framework - Dev.java](https://dev.java/learn/api/collections-framework/)
