@@ -1,0 +1,1 @@
+[如何评价阿里官方推荐的《RocketMQ技术内幕：RocketMQ架构设计与实现原理》这本书？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/314651736)
