@@ -18,7 +18,7 @@ Docker<font color="red">**帮助开发人员在任何地方 构建、共享 和
 
 > 正如 [Docker: Accelerated Container Application Development ](https://www.docker.com/) 所言， **Accelerate how you build, share, and run applications**
 
-其中，docler具体工作方式为：
+其中，Docker具体工作方式为：
 
 - Build ： 快速启动新环境；与您现有的工具集成；容器化应用程序以实现一致性
 - Share：使用经过验证的可信内容构建；与您的团队合作，从Hub拉取和发布镜像； 保护您的工作空间；
