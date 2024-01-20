@@ -2,8 +2,6 @@
 
 
 
-
-
 # 一、Servlet概述
 
 ## 1.1 与Web服务器及程序协助的CGI
@@ -30,7 +28,7 @@ CGI（Common Gateway Interface，通用网关接口）是指 **Web 服务器在�
 
 
 
-## 1.3 Servlet容器和Servlet规范
+## 1.3 Servlet 容器和 Servlet 规范
 
 Servlet 的运行环境叫做  **Servlet 容器**（也称为Web 容器或者Servlet引擎）。由于Servlet没有main方法，不能独立运行，它必须被部署到Servlet容器中，由容器来实例化和调用 Servlet的方法，Servlet容器在Servlet的生命周期内包容和管理Servlet。
 
@@ -59,8 +57,6 @@ Java Servlet是运行在带有支持 Java Servlet 规范的解释器的 web 服�
 > 我们平常使用的java SE并不包含Java Servlet实现代码
 
 本文将以Java(TM) EE 7 Specification APIs为例进行阐述，其官方API文档路径为[Overview (Java(TM) EE 7 Specification APIs) (oracle.com)](https://docs.oracle.com/javaee/7/api/toc.htm)
-
-
 
 
 
