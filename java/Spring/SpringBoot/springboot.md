@@ -196,9 +196,9 @@ springMVC的工作原理如下：
 > - Dispathcher查询一个或多个ViewResolver视图解析器,找到ModelAndView对象指定的视图对象 。
 > - 视图对象负责渲染返回给客户端。
 
-
-
 [C语言中文网](http://c.biancheng.net/view/4392.html)
+
+
 
 # Model与session的区别
 

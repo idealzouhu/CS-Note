@@ -10,7 +10,7 @@
 
 [ CS自学指南 (csdiy.wiki)](https://csdiy.wiki/使用指南/)： 计算机的自学指南，提供经典书籍和高质量CS课程推荐
 
-[Java 开源项目精选 ](https://javaguide.cn/open-source-project/)：Java程序员学习的全套教程，包含了 Java、408、Spring 等综合知识。另外。该项目提供了面试指南。
+[JavaGuide ](https://javaguide.cn/open-source-project/)：Java程序员学习的全套教程，包含了 Java、408、Spring 等综合知识。另外。该项目提供了面试指南。
 
 [小林coding](https://xiaolincoding.com/)：提供图解计算机网络、操作系统、MySQL、Redis
 
