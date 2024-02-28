@@ -1,0 +1,1 @@
+[软件架构与系统架构：区别与联系的分析 (qq.com)](https://mp.weixin.qq.com/s/btLJ74vXEvwj3BVFGIqVZg)

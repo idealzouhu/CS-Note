@@ -16,29 +16,7 @@
 
 [jackfrued/Python-100-Days: Python - 100天从新手到大师 (github.com)](https://github.com/jackfrued/Python-100-Days)： python 学习的全套教程
 
-
-
-
-
-## Spring
-
-
-
-
-
-## Tomcat
-
-Tomcat官网
-
-[Tomcat专题 - 黑马程序员 bilibili](https://www.bilibili.com/video/BV1dJ411N7Um?p=1&vd_source=52cd9a9deff2e511c87ff028e3bb01d2)：快速了解 Tomcat 的完整逻辑，但没有过度的深入。其中，[视频配套材料|百度网盘-分享无限制 (baidu.com)](https://pan.baidu.com/s/1_lIoUoGhbYnqrmAFzwXJrA#list/path=%2F&parentPath=%2Fsharelink3232509500-855223411954169)
-
-
-
-
-
-## Mybatis-plus
-
-
+[拿个offer - 开源&项目实战 (nageoffer.com)](https://nageoffer.com/)： 提供了不错的实训项目
 
 
 

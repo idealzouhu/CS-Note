@@ -4,9 +4,9 @@
 
 
 
-JVM通过环境变量`classpath`决定搜索`class`的路径和顺序；
+JVM通过环境变量 `classpath` 决定搜索`class`的路径和顺序；
 
-不推荐设置系统环境变量`classpath`，始终建议通过`-cp`命令传入；
+不推荐设置系统环境变量 `classpath` ，始终建议通过 `-cp` 命令传入；
 
 
 

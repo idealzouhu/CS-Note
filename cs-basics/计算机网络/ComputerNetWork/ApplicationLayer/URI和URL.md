@@ -44,9 +44,11 @@ urn:oasis:names:specification:docbook:dtd:xml:4.1.2
 
 # 二、统一资源定位符URL
 
-URL（Uniform Resource Locator）包括协议、主机名、端口号、路径和查询参数。
+## 2.1 URL 组成结构
 
+URL（Uniform Resource Locator）包括协议、主机名、端口号、路径和查询参数、锚点。
 
+[ URL 组成结构 | JavaGuide](https://javaguide.cn/cs-basics/network/the-whole-process-of-accessing-web-pages.html#url-的组成结构)
 
 
 
