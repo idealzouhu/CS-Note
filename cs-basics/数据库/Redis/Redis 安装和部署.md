@@ -101,10 +101,9 @@ redis-server
 
 
 
-
-
 # 参考资料
 
 [Window下Redis的安装和部署详细图文教程（Redis的安装和可视化工具的使用）_redis windows-CSDN博客](https://blog.csdn.net/weixin_44893902/article/details/123087435)
 
 [redis 中文社区](http://www.redis.cn/download.html)
+

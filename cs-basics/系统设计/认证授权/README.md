@@ -4,3 +4,14 @@
 
  [Session 在认证中的作用.md](Session 在认证中的作用.md) ：
 
+
+
+
+
+
+
+
+
+## 细节补充
+
+[前端自动刷新Token与超时安全退出攻略-CRMEB社区](https://www.crmeb.com/ask/thread/41710)

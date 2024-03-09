@@ -1,13 +1,3 @@
-
-
-## Java Web
-
-- [tomcat与servlet - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/465936851)：  详细地讲解了 Tomcat 与 Servlet 之间的关系。
-
-
-
-
-
 ## Spring
 
 - 《JavaEE开发的颠覆者  Spring+Boot实战》：内容全面，并且每一部分都提供了代码，可以作为入门资料和工具书。
