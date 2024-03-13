@@ -29,7 +29,7 @@ windows系统环境下，redis安装方式主要有：
 redis-server.exe redis.windows.conf
 ```
 
-命令里面的 `redis.windows.conf` （windows环境的redis配置文件）**可以省略**，省略后，使用`redis-server.exe`命令会使用默认的配置。
+命令里面的 `redis.windows.conf` （windows环境的redis配置文件）**可以省略**。省略后，使用`redis-server.exe`命令会使用默认的配置。
 
 
 
@@ -96,6 +96,31 @@ redis-server
 
 
 
+
+# 三、Docker 安装并部署 Redis
+
+首先，从 Docker Hub 下载 
+
+```
+docker pull redis
+```
+
+然后，在 Docker 容器中运行：
+
+```
+docker run -p 6379:6379 --name redis  -d redis redis-server --requirepass "123456"
+```
+
+相关参数含义：
+
+| 参数                                  | 说明                                                         |
+| ------------------------------------- | ------------------------------------------------------------ |
+| `docker run`                          | 运行容器命令                                                 |
+| `-p 6379:6379`                        | 将宿主机的 6379 端口映射到容器内的 6379 端口                 |
+| `--name redis`                        | 指定容器的名称为 `redis`                                     |
+| `-d`                                  | 在后台运行容器                                               |
+| `redis`                               | 指定要使用的 Docker 镜像，即 Redis 镜像                      |
+| `redis-server --requirepass "123456"` | 指定了容器启动时要执行的命令，这里是启动 Redis 服务器，并设置连接密码为 "123456" |
 
 
 

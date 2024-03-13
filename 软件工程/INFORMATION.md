@@ -7,6 +7,14 @@
 
 
 
+## 设计模式
+
+[设计模式常见面试题总结 | JavaGuide](https://javaguide.cn/system-design/design-pattern.html)： 总结了常用来面试的几种设计模式，并给出了这几种设计模式在 Java 工具里面的应用
+
+
+
+
+
 ## 微信公众号
 
 **技术自由圈** ：

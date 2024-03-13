@@ -22,7 +22,7 @@
 
 在Windows系统里，配置环境变量的步骤为：
 
-1. 解压maven压缩包到自定义目录里面。比如，我的安装目录为 `D:\Java\apache-maven-3.9.6`
+1. 解压 maven 压缩包到自定义目录里面。比如，我的安装目录为 `D:\Java\apache-maven-3.9.6`
 
 2. 在 "系统变量" 部分，找到 `Path` 变量，点击编辑。在编辑窗口中，点击 "新建"，然后添加 Maven 的 `bin` 目录路径，例如 `C:\Program Files\Apache\maven\bin`。
 
