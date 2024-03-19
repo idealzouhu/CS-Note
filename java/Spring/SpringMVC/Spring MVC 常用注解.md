@@ -46,8 +46,6 @@
 
 
 
-
-
 ### 1.2.3 @RequestBody
 
 通常，HTTP 请求中的参数会作为URL的一部分（例如，在GET请求中）或者作为表单数据（例如，在POST请求中）发送。但是有些情况下，特别是当需要发送复杂的数据结构（例如 JSON 或 XML 格式的数据）时，将参数放在请求体中更为方便。
@@ -127,6 +125,23 @@ public String getUserById(@PathVariable("userId") Long id) {
 在这个示例中，`@PathVariable("userId")`表示将路径中的参数`userId`赋予给方法参数`id`，而不是默认的参数名。
 
 
+
+### 1.2.5  `@RequestParam` 
+
+请求参数（Request Parameters）是客户端向服务器发送请求时传递的数据，通常包含在 URL 查询字符串或请求体中。在 HTTP 请求中，参数以键值对的形式发送，例如 `?key1=value1&key2=value2`。
+
+在 Spring MVC 中，可以使用 `@RequestParam` 注解来获取请求参数的值，如下所示：
+
+```
+javaCopy code@GetMapping("/example")
+public String exampleHandler(@RequestParam String key) {
+    // 使用 @RequestParam 获取请求参数值
+    System.out.println("Value of key: " + key);
+    return "examplePage";
+}
+```
+
+在这个例子中，`@RequestParam` 注解用于获取名为 "key" 的请求参数的值。
 
 
 

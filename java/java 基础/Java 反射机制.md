@@ -61,6 +61,14 @@ Java 反射是 Java 编程语言的一个重要特性，它**允许程序在运�
 
 
 
+## 2.2 Class 对象的获取方式
+
+[Java 反射机制详解 | JavaGuide](https://javaguide.cn/java/basis/reflection.html#反射实战)
+
+
+
+
+
 # 参考资料
 
 [Java 反射机制详解 | JavaGuide](https://javaguide.cn/java/basis/reflection.html)

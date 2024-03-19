@@ -1,6 +1,8 @@
 ## Redis
 
-[Redis 持久化机制.md](./Redis 持久化机制.md)
+[Redis 概述](./Redis 概述.md): 介绍 redis 以及 redis 常用功能；
+
+[Redis 持久化机制](./Redis 持久化机制.md)
 
 
 
