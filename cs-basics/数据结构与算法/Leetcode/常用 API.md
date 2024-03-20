@@ -51,6 +51,12 @@ int[] clonedArray = originalArray.clone();
 
 
 
+substring（i， j） ： 提取字符串的子串 [i, j)
+
+
+
+
+
 ## StringBuider
 
 | 方法                                      | 描述                                                         |
