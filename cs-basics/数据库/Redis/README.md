@@ -18,6 +18,14 @@
 
 
 
+## Redis 生产问题
+
+[缓存穿透、缓存击穿和缓存雪崩](https://javaguide.cn/database/redis/redis-questions-02.html#缓存穿透)
+
+[缓存击穿解决方案](./缓存击穿解决方案.md) 
+
+[如何避免缓存穿透](如何避免缓存穿透.md) 
+
 
 
 ## 细节补充
