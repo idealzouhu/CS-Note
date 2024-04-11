@@ -13,8 +13,6 @@ Aspect: 模块化的横切关注点的集合。
 
 
 
-
-
 ## AOP 案例
 
 ```
@@ -56,10 +54,10 @@ public @interface ILog {
 ```
  @Aspect
 public class ILogPrintAspect {
-@Around("@within(org.opengoofy.index12306.framework.starter.log.annotation.ILog) || @annotation(org.opengoofy.index12306.framework.starter.log.annotation.ILog)")
-    public Object printMLog(ProceedingJoinPoint joinPoint) throws Throwable {
-    ..........
-}
+    @Around("@within(org.opengoofy.index12306.framework.starter.log.annotation.ILog) ||  @annotation(org.opengoofy.index12306.framework.starter.log.annotation.ILog)")
+        public Object printMLog(ProceedingJoinPoint joinPoint) throws Throwable {
+        ..........
+    }
 
 }
 ```

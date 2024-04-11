@@ -36,9 +36,17 @@ int[] clonedArray = originalArray.clone();
 
 
 
+## Math 库
+
+```java
+Math.max(pre + x, x);
+```
 
 
-# String
+
+
+
+## String
 
 长度
 
@@ -74,12 +82,71 @@ substring（i， j） ： 提取字符串的子串 [i, j)
 
 
 
-# List
+## ArrayList
+
+| 方法                        | 描述                                                  |
+| --------------------------- | ----------------------------------------------------- |
+| `add(E e)`                  | 向 ArrayList 尾部添加一个元素。                       |
+| `add(int index, E element)` | 在指定索引位置插入一个元素。                          |
+| `get(int index)`            | 获取指定索引位置的元素。                              |
+| `set(int index, E element)` | 替换指定索引位置的元素。                              |
+| `remove(int index)`         | 移除指定索引位置的元素。                              |
+| `remove(Object o)`          | 移除第一个匹配的指定元素。                            |
+| `size()`                    | 返回 ArrayList 的大小（元素个数）。                   |
+| `isEmpty()`                 | 判断 ArrayList 是否为空。                             |
+| `clear()`                   | 清空 ArrayList 中的所有元素。                         |
+| `contains(Object o)`        | 判断 ArrayList 是否包含指定元素。                     |
+| `indexOf(Object o)`         | 返回指定元素第一次出现的索引，如果不存在则返回 -1。   |
+| `lastIndexOf(Object o)`     | 返回指定元素最后一次出现的索引，如果不存在则返回 -1。 |
 
 长度
 
 ```
 List<String> list = new ArrayList<>();
 int size = list.size(); // 获取列表的大小
+```
+
+
+
+
+
+## Map  哈希表
+
+containsKey
+
+```
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; ++i) {
+            if (hashtable.containsKey(target - nums[i])) {
+                return new int[]{hashtable.get(target - nums[i]), i};
+            }
+            hashtable.put(nums[i], i);
+        }
+        return new int[0];
+    }
+}
+```
+
+
+
+
+
+## Deque 栈
+
+```
+ Deque<Character> stack = new LinkedList<Character>();
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            if (pairs.containsKey(ch)) {
+                if (stack.isEmpty() || stack.peek() != pairs.get(ch)) {
+                    return false;
+                }
+                stack.pop();
+            } else {
+                stack.push(ch);
+            }
+        }
 ```
 
