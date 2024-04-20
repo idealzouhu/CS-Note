@@ -2,7 +2,19 @@
 
 [MySQL 安装及配置](./MySQL 安装及配置.md):  详细介绍 MySQL 的安装步骤；探索在 Docker 中部署 MySQL，包括数据库创建、数据导入，并使用 Navicat 实现便捷可视化连接。
 
-[MySQL 日志详解](./MySQL 日志详解.md)：介绍 MySQL 包含的日志，并着重介绍 binlog 、redo log、undo log。
+[MySQL 日志详解](./MySQL 日志详解.md)：介绍 MySQL 日志种类和作用范围，并着重介绍 binlog 、redo log、undo log。
+
+ [MYSQL 锁](MYSQL 锁.md) : 
+
+
+
+## MySQL 事务
+
+ [MySQL 事务](MySQL 事务.md) ：事务的ACID，以及事务并发引起的问题
+
+ [多版本并发控制 MVCC ](多版本并发控制 MVCC .md) : MVCC 是一种并发控制机制，用于在多个并发事务同时读写数据库时保持数据的一致性和隔离性。
+
+
 
 
 

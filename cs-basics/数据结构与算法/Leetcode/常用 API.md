@@ -135,6 +135,8 @@ class Solution {
 
 ## Deque 栈
 
+事实上，`Deque` 还提供有 `push()` 和 `pop()` 等其他方法，可用于模拟栈。
+
 ```
  Deque<Character> stack = new LinkedList<Character>();
         for (int i = 0; i < n; i++) {
@@ -146,7 +148,37 @@ class Solution {
                 stack.pop();
             } else {
                 stack.push(ch);
+            
+        }
+```
+
+
+
+
+
+## Queue
+
+```
+class Solution {
+    public int magicTower(int[] nums) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+        int ans = 0;
+        long hp = 1, delay = 0;
+        for( int num : nums){
+            pq.offer(num);
+            hp += num;
+            if(hp <= 0){
+                int cur =  pq.poll();      // 调整一次 
+                hp -= cur;
+                delay += cur;
+                ans += 1;
+    
             }
         }
+        hp += delay;  // delay 可以认为是降序排列的元素的和
+        return hp < 0 ? -1 : ans;
+
+    }
+}
 ```
 
