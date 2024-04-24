@@ -1,3 +1,19 @@
+## 比较器
+
+比较器的compare方法返回值的含义如下：
+
+- 如果dist[o1]小于dist[o2]，则返回一个负数，表示o1应该在o2之前。
+- 如果dist[o1]等于dist[o2]，则返回0，表示o1和o2的优先级相同。
+- 如果dist[o1]大于dist[o2]，则返回一个正数，表示o1应该在o2之后。
+
+
+
+
+
+
+
+
+
 ## Array
 
 最小值：
@@ -80,6 +96,12 @@ substring（i， j） ： 提取字符串的子串 [i, j)
 
 
 
+## 排序
+
+`Collections.sort()` 方法接受一个 `List` 参数，并对其进行升序排序。
+
+如果要对 `List` 中的元素进行降序排序，可以使用 `Collections.revers()` 方法来反转列表
+
 
 
 ## ArrayList
@@ -113,6 +135,10 @@ int size = list.size(); // 获取列表的大小
 ## Map  哈希表
 
 containsKey
+
+get
+
+put
 
 ```
 class Solution {
@@ -158,6 +184,8 @@ class Solution {
 
 ## Queue
 
+在优先队列（Priority Queue）中，元素通常按照其优先级进行排序。对于整数元素，通常情况下，较小的整数被认为具有更高的优先级，因此会被放置在队列的前面。
+
 ```
 class Solution {
     public int magicTower(int[] nums) {
@@ -178,6 +206,24 @@ class Solution {
         hp += delay;  // delay 可以认为是降序排列的元素的和
         return hp < 0 ? -1 : ans;
 
+    }
+}
+```
+
+
+
+```
+void bfs(TreeNode root) {
+    Queue<TreeNode> queue = new ArrayDeque<>();
+    queue.add(root);
+    while (!queue.isEmpty()) {
+        TreeNode node = queue.poll(); // Java 的 pop 写作 poll()
+        if (node.left != null) {
+            queue.add(node.left);
+        }
+        if (node.right != null) {
+            queue.add(node.right);
+        }
     }
 }
 ```

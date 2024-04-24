@@ -14,6 +14,12 @@ void dfs(TreeNode root) {
 }
 ```
 
+在 DFS 遍历里面，调整访问根节点的位置，即可先序遍历、中序遍历或者后序遍历
+
+
+
+
+
 BFS 遍历使用**队列**数据结构：
 
 ```
@@ -31,6 +37,31 @@ void bfs(TreeNode root) {
     }
 }
 ```
+
+上面的代码**无法区分队列中的结点来自哪一层**, 我们可以将 BFS 遍历可以认为是层序遍历
+
+```
+// 二叉树的层序遍历
+void bfs(TreeNode root) {
+    Queue<TreeNode> queue = new ArrayDeque<>();
+    queue.add(root);
+    while (!queue.isEmpty()) {
+        int n = queue.size();
+        for (int i = 0; i < n; i++) { 
+            // 变量 i 无实际意义，只是为了循环 n 次
+            TreeNode node = queue.poll();
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+    }
+}
+```
+
+
 
 
 

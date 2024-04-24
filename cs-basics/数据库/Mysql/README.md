@@ -6,6 +6,18 @@
 
  [MYSQL 锁](MYSQL 锁.md) : 
 
+ [MySQL 存储引擎.md](MySQL 存储引擎.md) 
+
+
+
+
+
+## MySQL 索引
+
+[在Mysql中，什么是回表，什么是覆盖索引，索引下推？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/401198674)
+
+[MySQL索引下推 ](https://juejin.cn/post/7005794550862053412)
+
 
 
 ## MySQL 事务
@@ -13,10 +25,6 @@
  [MySQL 事务](MySQL 事务.md) ：事务的ACID，以及事务并发引起的问题
 
  [多版本并发控制 MVCC ](多版本并发控制 MVCC .md) : MVCC 是一种并发控制机制，用于在多个并发事务同时读写数据库时保持数据的一致性和隔离性。
-
-
-
-
 
 
 
