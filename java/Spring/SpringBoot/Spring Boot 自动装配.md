@@ -1,3 +1,5 @@
+# 一、自动装配
+
 ```
 @SpringBootApplication
 @MapperScan("org.opengoofy.index12306.biz.orderservice.dao.mapper")
@@ -34,6 +36,16 @@ public @interface EnableAutoConfiguration {
 
 
 去加载META-INF下的spring-factories文件。在spring-factories中配置了自动装配类
+
+
+
+
+
+# 细节补充
+
+因为RocketMQ 最新版本 2.2.3 没有适配 SpringBoot3，所以需要手动搞定自动装配。
+
+
 
 
 

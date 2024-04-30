@@ -1,12 +1,26 @@
 ## 比较器
 
+```
+  Arrays.sort(numbers, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1 - o2; // 升序排列
+            }
+        });
+        
+        
+Arrays.sort(numbers, (o1, o2) -> o1 - o2); // 升序排列
+```
+
+
+
 比较器的compare方法返回值的含义如下：
 
 - 如果dist[o1]小于dist[o2]，则返回一个负数，表示o1应该在o2之前。
 - 如果dist[o1]等于dist[o2]，则返回0，表示o1和o2的优先级相同。
 - 如果dist[o1]大于dist[o2]，则返回一个正数，表示o1应该在o2之后。
 
-
+对于基本数据类型的数组排序（如`int[]`、`double[]`等），默认是**按照升序进行排序**。我们可以按照默认顺序来记住这个返回值和优先级的关系。
 
 
 
