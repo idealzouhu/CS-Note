@@ -18,5 +18,5 @@ Jedis 和 Redisson 都是 Java 中用于操作 Redis 的客户端库，它们提
 ## [Redis 为什么这么快？](https://javaguide.cn/database/redis/redis-questions-01.html#redis-为什么这么快)
 
 - 内存
-- Redis 基于 Reactor 模式设计开发了一套高效的**事件处理模型**，主要是单线程事件循环和 IO 多路复用（Redis 线程模式后面会详细介绍到）；
+- Redis 基于 Reactor 模式设计开发了一套高效的**事件处理模型**，主要是单线程事件循环和 **IO 多路复用**（Redis 线程模式后面会详细介绍到）；
 - 优化的数据类型

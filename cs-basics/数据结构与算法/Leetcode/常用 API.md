@@ -1,3 +1,5 @@
+
+
 ## 比较器
 
 ```
@@ -64,12 +66,29 @@ int[] clonedArray = originalArray.clone();
 
 
 
+## 包装类
+
+```java
+Integer.MIN_VALUE
+
+Integer.MAX_VALUE
+```
+
+
+
+通常使用的时候，以 [1491. 去掉最低工资和最高工资后的工资平均值 - 力扣（LeetCode）](https://leetcode.cn/problems/average-salary-excluding-the-minimum-and-maximum-salary/?envType=daily-question&envId=2024-05-03) 为例，min 要赋值最大值，这样在后面的循环中才能正确地更新 min
+
+```
+int min = Integer.MAX_VALUE;
+```
+
 
 
 ## Math 库
 
 ```java
 Math.max(pre + x, x);
+Math.min();
 ```
 
 
@@ -148,11 +167,23 @@ int size = list.size(); // 获取列表的大小
 
 ## Map  哈希表
 
-containsKey
-
-get
-
-put
+| 方法                              | 描述                                                         |
+| --------------------------------- | ------------------------------------------------------------ |
+| `put(key, value)`                 | 将指定的键值对存储到 HashMap 中。**如果键已存在，则替换对应的值。** |
+| `get(key)`                        | 返回指定键所映射的值，如果键不存在，则返回 null。            |
+| `remove(key)`                     | 删除 HashMap 中指定键所映射的值。如果键不存在，则不进行任何操作。 |
+| `containsKey(key)`                | 判断 HashMap 中是否包含指定的键。                            |
+| `containsValue(value)`            | 判断 HashMap 中是否包含指定的值。                            |
+| `size()`                          | 返回 HashMap 中键值对的数量。                                |
+| `isEmpty()`                       | 判断 HashMap 是否为空。                                      |
+| `clear()`                         | 清空 HashMap 中的所有键值对。                                |
+| `keySet()`                        | 返回 HashMap 中所有键构成的 Set 集合。                       |
+| `values()`                        | 返回 HashMap 中所有值构成的 Collection 集合。                |
+| `entrySet()`                      | 返回 HashMap 中所有键值对(Map.entry)构成的 Set 集合。        |
+| `putAll(map)`                     | 将指定 Map 中的所有键值对存储到 HashMap 中。                 |
+| `replace(key, value)`             | 替换 HashMap 中指定键所映射的值。如果键不存在，则不进行任何操作。 |
+| `putIfAbsent(key, value)`         | 将指定的键值对存储到 HashMap 中，仅当键不存在时才执行存储操作。 |
+| `getOrDefault(key, defaultValue)` | 返回指定键对应的值，如果键不存在，则返回指定的默认值。       |
 
 ```
 class Solution {
@@ -173,6 +204,47 @@ class Solution {
 
 
 
+## Map.Entry
+
+`Map.Entry` 是 Java 中的一个接口，用于表示 Map 中的键值对。它定义了一组方法，可以获取键和值，并且允许在迭代 Map 时访问 Map 中的键值对。
+
+
+
+
+
+以 [447. 回旋镖的数量 - 力扣（LeetCode）](https://leetcode.cn/problems/number-of-boomerangs/solutions/994189/hui-xuan-biao-de-shu-liang-by-leetcode-s-lft5/?envType=daily-question&envId=2024-05-04) 为例，HashMap 的遍历
+
+```
+Map<String, Integer> map = new HashMap<>();
+map.put("apple", 1);
+map.put("banana", 2);
+map.put("orange", 3);
+
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Integer value = entry.getValue();
+    System.out.println("Key: " + key + ", Value: " + value);
+}
+```
+
+
+
+
+
+## HashSet
+
+| 方法                | 描述                                                       |
+| ------------------- | ---------------------------------------------------------- |
+| `add(element)`      | 向集合中添加指定的元素。如果元素已存在，则不进行任何操作。 |
+| `remove(element)`   | 从集合中删除指定的元素。如果元素不存在，则不进行任何操作。 |
+| `contains(element)` | 判断集合中是否包含指定的元素。                             |
+| `size()`            | 返回集合中元素的数量。                                     |
+| `isEmpty()`         | 判断集合是否为空。                                         |
+| `clear()`           | 清空集合中的所有元素。                                     |
+| `iterator()`        | 返回集合的迭代器，用于遍历集合中的元素。                   |
+
+
+
 ## Deque 栈
 
 事实上，`Deque` 还提供有 `push()` 和 `pop()` 等其他方法，可用于模拟栈。
@@ -190,6 +262,12 @@ class Solution {
                 stack.push(ch);
             
         }
+```
+
+
+
+```
+Deque<Integer> stack = new ArrayDeque<Integer>();
 ```
 
 

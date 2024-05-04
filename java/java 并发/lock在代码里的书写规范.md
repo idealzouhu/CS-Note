@@ -3,12 +3,12 @@
 lock.lock() 为什么写到try语句外，lock.unlock() 放到 finally 语句块 
 
 ```java
-ReentrantLock lock = new ReentrantLock();
-lock.lock();
+ReentrantLock lock = new ReentrantLock();  // 获取锁对象
+lock.lock();   // 加锁
 try {
     // access the resource protected by this lock
 } finally {
-    lock.unlock();
+    lock.unlock();  // 解锁
 }
 ```
 
