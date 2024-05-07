@@ -12,7 +12,7 @@
 
 CDN （Content Delivery Network, 内容分发网络）相关定义：
 
-- 在 [阿里云CDN](https://help.aliyun.com/zh/cdn/product-overview/what-is-alibaba-cloud-cdn?spm=a2c4g.11174283.0.0.78ac64c5GyQajG) 的介绍里, CDN是建立并覆盖在承载网之上，由遍布全球的边缘节点服务器群组成的分布式网络。
+- 在 [阿里云CDN](https://help.aliyun.com/zh/cdn/product-overview/what-is-alibaba-cloud-cdn?spm=a2c4g.11174283.0.0.78ac64c5GyQajG) 的介绍里,  CDN是建立并覆盖在承载网之上，由遍布全球的边缘节点服务器群组成的分布式网络。
 
 - 简单来说，CDN 是一种利用分布式节点和缓存技术，将内容（如网页、图片、视频等）缓存到离用户较近的服务器上，以提高用户访问这些内容的速度和稳定性的技术。
 

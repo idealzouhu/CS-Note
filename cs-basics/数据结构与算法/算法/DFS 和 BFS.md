@@ -2,6 +2,8 @@
 
 [102. 二叉树的层序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-level-order-traversal/solutions/244853/bfs-de-shi-yong-chang-jing-zong-jie-ceng-xu-bian-l/)
 
+## DFS 遍历
+
 DFS 遍历使用 **递归**：
 
 ```
@@ -16,9 +18,13 @@ void dfs(TreeNode root) {
 
 在 DFS 遍历里面，调整访问根节点的位置，即可先序遍历、中序遍历或者后序遍历
 
+[94. 二叉树的中序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-inorder-traversal/?envType=daily-question&envId=2024-05-03)：给出递归和迭代两种实现方式
 
 
 
+
+
+## BFS 遍历
 
 BFS 遍历使用**队列**数据结构：
 

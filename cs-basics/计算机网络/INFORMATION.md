@@ -1,5 +1,7 @@
 ## 计算机网络
 
+[计算机网络怎么学？ | 小林coding (xiaolincoding.com)](https://xiaolincoding.com/network/5_learn/learn_network.html#深入学习系列)
+
 计算机网络-自顶向下方法第七版（书籍）
 
 计算机网络（第7版）-谢希仁（书籍）
