@@ -30,7 +30,7 @@ Arrays.sort(numbers, (o1, o2) -> o1 - o2); // 升序排列
 
 
 
-## Array
+## Arrays
 
 最小值：
 
@@ -43,6 +43,10 @@ int min = nums[0];
 
  // 使用 Arrays.stream() 将数组转换为流，然后调用 min() 方法获取最小值（ Optional 对象）
  int min = Arrays.stream(nums).min().getAsInt();
+ 
+ boolean[] used = new boolean[nums.length];
+ Arrays.fill(used, false);
+ Arrays.sort(nums);
 ```
 
 
@@ -134,6 +138,8 @@ substring（i， j） ： 提取字符串的子串 [i, j)
 `Collections.sort()` 方法接受一个 `List` 参数，并对其进行升序排序。
 
 如果要对 `List` 中的元素进行降序排序，可以使用 `Collections.revers()` 方法来反转列表
+
+
 
 
 
@@ -276,6 +282,26 @@ Deque<Integer> stack = new ArrayDeque<Integer>();
 
 ## Queue
 
+普通的队列
+
+```
+void bfs(TreeNode root) {
+    Queue<TreeNode> queue = new ArrayDeque<>();
+    queue.add(root);
+    while (!queue.isEmpty()) {
+        TreeNode node = queue.poll(); // Java 的 pop 写作 poll()
+        if (node.left != null) {
+            queue.add(node.left);
+        }
+        if (node.right != null) {
+            queue.add(node.right);
+        }
+    }
+}
+```
+
+
+
 在优先队列（Priority Queue）中，元素通常按照其优先级进行排序。对于整数元素，通常情况下，较小的整数被认为具有更高的优先级，因此会被放置在队列的前面。
 
 ```
@@ -304,19 +330,21 @@ class Solution {
 
 
 
+
+
+## 流
+
+分析一下以下语句
+
 ```
-void bfs(TreeNode root) {
-    Queue<TreeNode> queue = new ArrayDeque<>();
-    queue.add(root);
-    while (!queue.isEmpty()) {
-        TreeNode node = queue.poll(); // Java 的 pop 写作 poll()
-        if (node.left != null) {
-            queue.add(node.left);
-        }
-        if (node.right != null) {
-            queue.add(node.right);
-        }
-    }
-}
+
+List<StringBuilder> res = new ArrayList<>();
+String[] answer = new String[res.size()];
+       for(int i = 0; i < res.size(); i++){
+            answer[i] = res.get(i).toString();
+       } 
+       
+       
+       String[] answer = res.stream().map(StringBuilder::toString).toArray(String[]::new);
 ```
 

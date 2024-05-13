@@ -2,9 +2,9 @@
 
 > Java 基础知识建议查看 [Java基础常见面试题总结(上) | JavaGuide](https://javaguide.cn/java/basis/java-basic-questions-01.html#自增自减运算符)
 
-[JDK、JRE、JVM关系](./JDK、JRE、JVM关系.md)
-
 [jdk 安装教程](./jdk 安装教程.md)
+
+[JDK、JRE、JVM关系](./JDK、JRE、JVM关系.md)
 
 [基本数据类型](基本数据类型.md):  阐述基本类型和包装类型，并重点介绍包装类型的缓存机制
 
@@ -15,6 +15,8 @@
 
 
 ## 常见类
+
+重点介绍 java.lang 里面的部分重点类
 
 [Object 类](./Object 类.md)： 
 

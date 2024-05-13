@@ -1,3 +1,11 @@
+## 模拟
+
+最基本的思路，在某种程度上类似蛮力法
+
+[2079. 给植物浇水 - 力扣（LeetCode）](https://leetcode.cn/problems/watering-plants/?envType=daily-question&envId=2024-05-08)
+
+
+
 ## 前后缀分解
 
 [1652. 拆炸弹 - 力扣（LeetCode）](https://leetcode.cn/problems/defuse-the-bomb/solutions/2765768/python3javacgotypescript-yi-ti-shuang-ji-lk9a/?envType=daily-question&envId=2024-05-05)： 数组的倒数元素可以通过循环遍历取模实现
@@ -20,11 +28,13 @@
 
 
 
-## 图
+## 图论
 
 [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/) ： 该题是[岛屿类问题](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-)中的一类问题，解法主要是如何在图上 DFS
 
 [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)：最短路径问题，使用 迪杰斯特拉算法来解决
+
+
 
 
 
