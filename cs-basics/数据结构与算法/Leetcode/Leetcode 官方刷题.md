@@ -1,3 +1,7 @@
+>  [LeetCode 热题 100 - 学习计划 - 力扣（LeetCode）](https://leetcode.cn/studyplan/top-100-liked/) 
+>
+>  [Re：从零开始的力扣刷题生活](https://leetcode.cn/circle/discuss/E3yavq/) 
+
 ## 模拟
 
 最基本的思路，在某种程度上类似蛮力法
