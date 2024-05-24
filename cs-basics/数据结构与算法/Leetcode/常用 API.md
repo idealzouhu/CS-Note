@@ -173,23 +173,26 @@ int size = list.size(); // 获取列表的大小
 
 ## Map  哈希表
 
-| 方法                              | 描述                                                         |
-| --------------------------------- | ------------------------------------------------------------ |
-| `put(key, value)`                 | 将指定的键值对存储到 HashMap 中。**如果键已存在，则替换对应的值。** |
-| `get(key)`                        | 返回指定键所映射的值，如果键不存在，则返回 null。            |
-| `remove(key)`                     | 删除 HashMap 中指定键所映射的值。如果键不存在，则不进行任何操作。 |
-| `containsKey(key)`                | 判断 HashMap 中是否包含指定的键。                            |
-| `containsValue(value)`            | 判断 HashMap 中是否包含指定的值。                            |
-| `size()`                          | 返回 HashMap 中键值对的数量。                                |
-| `isEmpty()`                       | 判断 HashMap 是否为空。                                      |
-| `clear()`                         | 清空 HashMap 中的所有键值对。                                |
-| `keySet()`                        | 返回 HashMap 中所有键构成的 Set 集合。                       |
-| `values()`                        | 返回 HashMap 中所有值构成的 Collection 集合。                |
-| `entrySet()`                      | 返回 HashMap 中所有键值对(Map.entry)构成的 Set 集合。        |
-| `putAll(map)`                     | 将指定 Map 中的所有键值对存储到 HashMap 中。                 |
-| `replace(key, value)`             | 替换 HashMap 中指定键所映射的值。如果键不存在，则不进行任何操作。 |
-| `putIfAbsent(key, value)`         | 将指定的键值对存储到 HashMap 中，仅当键不存在时才执行存储操作。 |
-| `getOrDefault(key, defaultValue)` | 返回指定键对应的值，如果键不存在，则返回指定的默认值。       |
+| 方法                                                 | 描述                                                         |
+| ---------------------------------------------------- | ------------------------------------------------------------ |
+| `put(key, value)`                                    | 将指定的键值对存储到 HashMap 中。**如果键已存在，则替换对应的值。** |
+| `get(key)`                                           | 返回指定键所映射的值，如果键不存在，则返回 null。            |
+| `remove(key)`                                        | 删除 HashMap 中指定键所映射的值。如果键不存在，则不进行任何操作。 |
+| `containsKey(key)`                                   | 判断 HashMap 中是否包含指定的键。                            |
+| `containsValue(value)`                               | 判断 HashMap 中是否包含指定的值。                            |
+| `size()`                                             | 返回 HashMap 中键值对的数量。                                |
+| `isEmpty()`                                          | 判断 HashMap 是否为空。                                      |
+| `clear()`                                            | 清空 HashMap 中的所有键值对。                                |
+| `keySet()`                                           | 返回 HashMap 中所有键构成的 Set 集合。                       |
+| `values()`                                           | 返回 HashMap 中所有值构成的 Collection 集合。                |
+| `entrySet()`                                         | 返回 HashMap 中所有键值对(Map.entry)构成的 Set 集合。        |
+| `putAll(map)`                                        | 将指定 Map 中的所有键值对存储到 HashMap 中。                 |
+| `replace(key, value)`                                | 替换 HashMap 中指定键所映射的值。如果键不存在，则不进行任何操作。 |
+| `putIfAbsent(key, value)`                            | 将指定的键值对存储到 HashMap 中，仅当键不存在时才执行存储操作。 |
+| `computeIfAbsent(K key, Function remappingFunction)` | 判断一个map中是否存在这个key，如果存在则处理value的数据，如果不存在，则创建一个满足value要求的数据结构放到value中<br>返回值为 value |
+| `getOrDefault(key, defaultValue)`                    | 返回指定键对应的值，如果键不存在，则返回指定的默认值。       |
+
+
 
 ```
 class Solution {
@@ -207,6 +210,24 @@ class Solution {
 ```
 
 
+
+```
+  private static final Map<Character,Character> map = new HashMap<Character,Character>(){{
+        put('{','}'); put('[',']'); put('(',')'); put('?','?');
+    }};
+```
+
+
+
+判断一个map中是否存在这个key，如果存在则处理value的数据，如果不存在，则创建一个满足value要求的数据结构放到value中.
+
+```
+ for (int i = 0; i < n; i++) {
+            pos.computeIfAbsent(nums.get(i), x -> new ArrayList<>()).add(i);
+        }
+```
+
+代码中，我们使用了匿名函数 lambda 表达式 **x -> new ArrayList<>()** 作为重新映射函数，prices.computeIfAbsent() 将 lambda 表达式返回的新值关联到 x。
 
 
 
@@ -251,9 +272,19 @@ for (Map.Entry<String, Integer> entry : map.entrySet()) {
 
 
 
+```
+Set<String> set = new HashSet<>();
+```
+
+
+
 ## Deque 栈
 
-事实上，`Deque` 还提供有 `push()` 和 `pop()` 等其他方法，可用于模拟栈。
+事实上，`Deque` 还提供有 `push()` 和 `pop()`  `size()`  等其他方法，可用于模拟栈。
+
+peek() :  查看栈顶元素;  当栈为空时，`peek()` 方法返回 `null`。
+
+
 
 ```
  Deque<Character> stack = new LinkedList<Character>();
@@ -268,6 +299,10 @@ for (Map.Entry<String, Integer> entry : map.entrySet()) {
                 stack.push(ch);
             
         }
+```
+
+```
+Deque<Character> stack = new LinkedList<Character>();
 ```
 
 

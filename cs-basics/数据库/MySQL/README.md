@@ -46,9 +46,7 @@
 
  [INTERVIEW](INTERVIEW.md) :   公司面试题目
 
-
-
-
+ [MySQL 基础语法.md](MySQL 基础语法.md) 
 
  [手写sql语句](手写sql语句.md)：某些公司笔试会要求我们手写 sql 题目，我们因此提前熟悉 sql 相关语法
 

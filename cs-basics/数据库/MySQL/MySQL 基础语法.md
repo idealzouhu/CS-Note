@@ -29,3 +29,4 @@ SELECT selection_list /*要查询的列名称*/
 
 [MySQL—内连接和外连接区别_内连接和外连接的区别-CSDN博客](https://blog.csdn.net/johnhan9/article/details/88686288)
 
+[MySQL 经典练习 50 题（完美解答版）_mysql经典50题答案-CSDN博客](https://blog.csdn.net/GodSuzzZ/article/details/106930311)
