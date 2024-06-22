@@ -40,7 +40,7 @@
 
 ### 双指针
 
-[160. 相交链表 - 力扣（LeetCode）](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
+[160. 相交链表 - 力扣（LeetCodhttps://eveningwater.github.io/to-offer/#/READMEe）](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
 
 
 
@@ -56,6 +56,12 @@
 
 
 ## 二、结构目录
+
+### 字符串
+
+[2981. 找出出现至少三次的最长特殊子字符串 I - 力扣（LeetCode）](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/)：分类讨论问题，没有用到什么算法，但是**逻辑比较复杂**
+
+
 
 ### 矩阵
 

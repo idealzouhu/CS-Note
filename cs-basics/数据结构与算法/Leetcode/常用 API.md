@@ -1,3 +1,13 @@
+## 位运算
+
+[1738. 找出第 K 大的异或坐标值 - 力扣（LeetCode）](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/?envType=daily-question&envId=2024-05-26)
+
+```
+^   重要数学知识： 对 x 异或两次 y ， 结果仍是 x .   x 异或 0 依旧为 x
+```
+
+
+
 
 
 ## 比较器
@@ -12,6 +22,13 @@
         
         
 Arrays.sort(numbers, (o1, o2) -> o1 - o2); // 升序排列
+
+
+Collections.sort(results, new Comparator<Integer>() {
+            public int compare(Integer num1, Integer num2) {
+                return num2 - num1;
+            }
+});
 ```
 
 
@@ -93,7 +110,10 @@ int min = Integer.MAX_VALUE;
 ```java
 Math.max(pre + x, x);
 Math.min();
+Math.abs()
 ```
+
+
 
 
 

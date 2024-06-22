@@ -20,6 +20,20 @@
 
 
 
+## 书籍下载
+
+[Jackpopc/CS-Books-Store: 你想要的计算机经典书籍，这里都有！ (github.com)](https://github.com/Jackpopc/CS-Books-Store)
+
+https://gitee.com/monday-pro/book
+
+[大白菜博客](https://cmsblogs.cn/4668.html)
+
+[Z-Library – the world’s largest e-book library. Your gateway to knowledge and culture. (zlibrary-sg.se)](https://zlibrary-sg.se/)
+
+
+
+
+
 ## IDEA
 
 [ IDEA 高效使用指南 (javaguide.cn)](https://idea.javaguide.cn/)

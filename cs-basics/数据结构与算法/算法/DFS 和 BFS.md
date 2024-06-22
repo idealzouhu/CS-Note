@@ -71,6 +71,8 @@ void bfs(TreeNode root) {
 
 
 
+> 注意，上面的层序遍历代码没有考虑 root 为 null 的情况
+
 
 
 ## 二、图的遍历

@@ -1,9 +1,9 @@
 ## 软件架构经典书籍
 
-- 《系统设计》：可以帮助快速了解常用的系统设计。该书比较适合用于用于面试，翻译于  [Alex](https://so.csdn.net/so/search?q=Alex&spm=1001.2101.3001.7020) Xu 的 《System Design Interview》
+- 《搞定系统设计：面试敲开大厂的门》：可以帮助快速了解常用的系统设计。该书比较适合用于用于面试，翻译于  [Alex](https://so.csdn.net/so/search?q=Alex&spm=1001.2101.3001.7020) Xu 的 《System Design Interview》
 - [《系统架构设计师教程》]( https://pan.baidu.com/share/init?surl=ZUCq3CskdqqbSywt2ZwHpQ&pwd=yujm )（软考）：整体脉络还不错，其中软件分类这部分感觉讲的不错
 
-
+[专栏汇总：架构师必看 系列文章 - 大白菜博客 (cmsblogs.cn)](https://cmsblogs.cn/545.html)
 
 
 
