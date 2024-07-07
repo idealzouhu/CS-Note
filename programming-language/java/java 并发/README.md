@@ -1,10 +1,16 @@
+## 进程和线程
+
+
+
+
+
 ## Java 并发基础
 
 [并发编程特性](https://javaguide.cn/java/concurrent/jmm.html#再看并发编程三个重要特性)：原子性，可见性，有序性
 
 [什么是锁](什么是锁.md) ：
 
-[锁的分类](锁的分类.md) : 列举锁在不同角度上的分类，并介绍一些常见的分类。
+[锁的分类](锁的分类.md) : 列举锁在不同角度上的分类，并重点介绍常见的锁。
 
 [怎么实现锁](怎么实现锁.md) ：列举 Java 里面常用的 volatile、synchronized、reentranlock
 

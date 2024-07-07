@@ -56,7 +56,9 @@
 
 INFORMATION.md 文档最好放在二级目录或者三级目录
 
-面试链接放在 README.md 文档里面，常见的问题放在 INTERVIEW.md 文档里面
+面试链接放在 README.md 文档里面，
+
+常见的问题放在 INTERVIEW.md 文档里面
 
 
 
