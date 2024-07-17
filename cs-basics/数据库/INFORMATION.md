@@ -1,10 +1,10 @@
-## 数据库基础
+### 数据库基础
 
 《 数据库系统概论  第5版 》：以 SQL 为基础，讲述了 数据库的基础知识，可以作为工具书和入门教材
 
 
 
-## MySQL
+### MySQL
 
 [数据库大牛推荐的《MySQL》书籍，值得反复阅读_MySQL_NineData_InfoQ写作社区](https://xie.infoq.cn/article/70f45af730eb83337d98c0154#:~:text=推荐书籍与资源 1 1、《MySQL 是怎样运行的》 2 2、《高性能 MySQL》 3,InnoDB 存储引擎》 4 4、用好 MySQL 官方文档 5 5、视频%2F音频资源)
 
@@ -25,12 +25,16 @@
 
 
 
-## Redis 
+### Redis 
 
 [Try Redis](https://try.redis.io/) ：运行 Redis 代码的在线网站
 
+[2024年最值得收藏的Redis学习路线（建议收藏🔥） | 二哥的Java进阶之路 (javabetter.cn)](https://javabetter.cn/xuexiluxian/redis.html)
 
 
-## Redis 面试
+
+
+
+### Redis 面试
 
 [newsql_nosql_library/Redis/面试题/面试题_01.md at main · 0voice/newsql_nosql_library · GitHub](https://github.com/0voice/newsql_nosql_library/blob/main/Redis/面试题/面试题_01.md#subject_011)

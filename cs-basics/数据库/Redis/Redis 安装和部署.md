@@ -37,7 +37,9 @@ redis-server.exe redis.windows.conf
 
 ![image-20231129142900790](images/image-20231129142900790.png)
 
-> 注意，启动redis服务器后，不能关闭窗口，否则客户端将无法连接。
+> 注意，启动 Redis 服务器后，不能关闭窗口，否则客户端将无法连接。
+>
+> 6979 是 Redis 的默认端口号
 
 
 

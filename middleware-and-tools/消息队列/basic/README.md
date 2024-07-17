@@ -1,4 +1,4 @@
-## 消息队列标准
+### 消息队列标准
 
 [JMS 规范.md](./JMS 规范.md): 
 
@@ -8,6 +8,14 @@
 
 
 
-## 消息队列
+### 消息队列
 
 [异步通信模式.md](./异步通信模式.md)
+
+
+
+
+
+### 进阶问题
+
+[阿里面试：canal+MQ，会有乱序的问题吗？ (qq.com)](https://mp.weixin.qq.com/s/w0rzwuBgWOei5fhqsf8b4A)
