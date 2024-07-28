@@ -6,15 +6,9 @@
 
 
 
-
-
 ### SpringBoot多模块
 
 [手摸手之创建SpringBoot多模块 (yuque.com)](https://www.yuque.com/magestack/12306/fx2og75a98hg5gz9)
-
-
-
-
 
 打开 Parent 项目的根 Pom.xml 文件，新增下方代码。
 

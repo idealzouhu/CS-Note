@@ -1,6 +1,6 @@
-# 一、Maven下载和安装
+## 一、Maven下载和安装
 
-## 1.1 下载 Maven
+### 1.1 下载 Maven
 
 打开 Maven 的官方网站[Maven – Download Apache Maven](https://maven.apache.org/download.cgi#files)，下载最新版本的 Maven
 
@@ -16,7 +16,7 @@
 
 
 
-## 1.2 配置环境变量
+### 1.2 配置环境变量
 
 配置环境变量是为了在命令行中方便地运行特定工具或应用程序，而不需要每次都提供完整的路径。
 
@@ -43,7 +43,9 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 
 
-# 参考资料
+
+
+## 参考资料
 
 [Maven – Download Apache Maven](https://maven.apache.org/download.cgi#files)
 

@@ -170,4 +170,6 @@ docker run -d ^
 
 # 参考资料
 
+[Docker 部署 RocketMQ | RocketMQ (apache.org)](https://rocketmq.apache.org/zh/docs/quickStart/02quickstartWithDocker#4启动-brokerproxy)
+
 [window 环境下docker 安装 rocketMQ_windows docker rocketmq-CSDN博客](https://blog.csdn.net/keep_learn/article/details/120540295)
