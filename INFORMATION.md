@@ -1,4 +1,4 @@
-## 文档说明
+### 文档说明
 
 本文档主要总结在编程学习中遇到的比较好的资料，比如 博客、技术网站和视频等。同时，这些资料按照具体技术分类，有一定的可能会重复出现在不同的技术学习资料中。
 
@@ -6,7 +6,7 @@
 
 
 
-## 综合性网站
+### 综合性网站
 
 [ CS自学指南 (csdiy.wiki)](https://csdiy.wiki/使用指南/)： 计算机的自学指南，提供经典书籍和高质量CS课程推荐
 
@@ -20,7 +20,17 @@
 
 
 
-## 书籍下载
+### 面试资料
+
+[JavaGuide 面试突击版](https://pan.baidu.com/s/108U2Pz9iIKNafdB8XIXntw?pwd=uuch)
+
+[《JavaGuide面试指北》](https://pan.baidu.com/s/1oNuC9yAlN-bx7-TLZo7KYg?pwd=4gpn)
+
+[数据结构与算法面试题 | 小林coding (xiaolincoding.com)](https://xiaolincoding.com/interview/data.html#数据结构)
+
+
+
+### 书籍下载
 
 [Jackpopc/CS-Books-Store: 你想要的计算机经典书籍，这里都有！ (github.com)](https://github.com/Jackpopc/CS-Books-Store)
 
@@ -34,6 +44,3 @@ https://gitee.com/monday-pro/book
 
 
 
-## IDEA
-
-[ IDEA 高效使用指南 (javaguide.cn)](https://idea.javaguide.cn/)

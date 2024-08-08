@@ -1,6 +1,4 @@
-
-
-# 项目介绍
+### 项目介绍
 
 计算机基础知识总结笔记：总结在日常学到的计算机知识点（**完善中**）
 
@@ -8,7 +6,7 @@
 
 
 
-# 参考资料
+### 参考资料
 
 [JavaGuide(Java面试 + 学习指南)](https://javaguide.cn/about-the-author/zhishixingqiu-two-years.html#简历修改)
 

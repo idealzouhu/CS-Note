@@ -97,3 +97,5 @@ IO多路复用模型与同步非阻塞IO模型是有密切关系的，具体来�
 ### 参考资料
 
 《极致经典（卷2）：Java高并发核心编程(卷2 加强版)》
+
+[【IO】IO底层原理以及常见模型 - 酷酷- - 博客园 (cnblogs.com)](https://www.cnblogs.com/kukuxjx/p/17354520.html)

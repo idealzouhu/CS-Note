@@ -1,5 +1,3 @@
-
-
 # 一、Spring MVC 常用注解
 
 ## 1.1 控制器
@@ -12,15 +10,11 @@
 
 
 
-
-
 ### 1.1.2 @RestController
 
 `@RestController` 是 Spring 框架中的一个注解，它是 `@Controller `注解和 `@ResponseBody` 注解的组合。它的作用是**将一个类标识为 RESTful 风格的控制器**，用于处理 HTTP 请求并返回数据，通常用于构建 RESTful API。
 
 与`@Controller`注解不同的是，`@RestController` 注解会<font color="red">**自动将方法的返回值转换为 JSON 或 XML 格式的响应数据**</font>，并返回给客户端，而不是返回一个视图。具体区别查看 `@ResponseBody` 注解
-
-
 
 
 

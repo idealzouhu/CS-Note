@@ -53,7 +53,9 @@ public @interface EnableAutoConfiguration {
 
 
 
+### 参考资料
 
+[SpringBoot 自动装配原理详解 | JavaGuide](https://javaguide.cn/system-design/framework/spring/spring-boot-auto-assembly-principles.html#如何实现一个-starter)
 
 
 

@@ -54,22 +54,6 @@ Spring Boot 是基于 Spring 的项目，其中最重要的核心有：
 
 
 
+### Spring Boot 的 starter
 
-## redirect方法和forward方法
-
-[借鉴网站](https://www.cnblogs.com/selene/p/4518246.html)
-
-
-
-## 拦截器
-
-
-
-
-
-
-
-
-
-# Model与session的区别
-
+[Build Systems :: Spring Boot](https://docs.spring.io/spring-boot/reference/using/build-systems.html#using.build-systems.starters)

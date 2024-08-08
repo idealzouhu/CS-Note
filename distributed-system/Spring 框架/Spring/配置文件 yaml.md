@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 # 配置信息读取
 
 ## @Value
@@ -21,8 +17,8 @@ library.name=My Library
 
 在 Spring Bean 中可以使用 `@Value` 注解来注入 `library.name` 属性的值：
 
-```
-javaCopy code@Component
+```java
+@Component
 public class MyComponent {
 
     @Value("${library.name}")

@@ -77,6 +77,12 @@ void bfs(TreeNode root) {
 
 ## 二、图的遍历
 
+一般而言，图都是一个正方形。
+
+因此， 我们要心中有个图，宽为 grid.length , 长为 grid[0].length 的正方形
+
+
+
 [200. 岛屿数量 - 力扣（LeetCode）](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)
 
 
@@ -136,3 +142,10 @@ boolean inArea(int[][] grid, int r, int c) {
 }
 ```
 
+
+
+
+
+### BFS 遍历
+
+[994. 腐烂的橘子 - 力扣（LeetCode）](https://leetcode.cn/problems/rotting-oranges/solutions/129542/yan-du-you-xian-sou-suo-python3-c-by-z1m/?envType=study-plan-v2&envId=top-100-liked)

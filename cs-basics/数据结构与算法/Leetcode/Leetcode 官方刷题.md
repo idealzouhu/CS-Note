@@ -40,7 +40,9 @@
 
 ### 双指针
 
-[160. 相交链表 - 力扣（LeetCodhttps://eveningwater.github.io/to-offer/#/READMEe）](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
+[160. 相交链表 - 力扣](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
+
+[283. 移动零 - 力扣（LeetCode）](https://leetcode.cn/problems/move-zeroes/?envType=study-plan-v2&envId=top-100-liked)
 
 
 
@@ -85,6 +87,10 @@
 
 [160. 相交链表 - 力扣（LeetCode）](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
 
+[234. 回文链表 - 力扣（LeetCode）](https://leetcode.cn/problems/palindrome-linked-list/description/)：利用快慢指针找到链表的中间位置
+
+[21. 合并两个有序链表 - 力扣（LeetCode）](https://leetcode.cn/problems/merge-two-sorted-lists/?envType=study-plan-v2&envId=top-100-liked)：使用哑节点优化代码
+
 
 
 ### 树
@@ -105,7 +111,7 @@
 
 [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)：最短路径问题，使用 迪杰斯特拉算法来解决
 
-
+[994. 腐烂的橘子 - 力扣（LeetCode）](https://leetcode.cn/problems/rotting-oranges/solutions/124765/fu-lan-de-ju-zi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 在图上进行多源广度优先搜索，实际上多源广度优先搜索可以理解为特殊的单源广度优先搜索。
 
 
 

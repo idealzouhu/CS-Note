@@ -1,10 +1,10 @@
 [TOC]
 
-# 一、MySQL 日志
+## 一、MySQL 日志
 
 ![img](images/v2-db8d56110c87a6769af97a83509528f4_720w.webp)
 
-## 1.1 物理日志和逻辑日志
+### 1.1 物理日志和逻辑日志
 
 物理日志和逻辑日志是数据库系统中两种不同类型的日志。
 
@@ -20,23 +20,23 @@
 
 
 
-# 二、binlog
+## 二、binlog
 
-## 2.1 什么是 binlog
-
-
-
-
-
-# 三、redo log
-
-## 3.1 什么是 redo log
+### 2.1 什么是 binlog
 
 
 
 
 
-# 四、undo log
+## 三、redo log
+
+### 3.1 什么是 redo log
+
+
+
+
+
+## 四、undo log
 
 
 
@@ -44,9 +44,9 @@
 
 
 
-# 五、细节补充
+## 五、细节补充
 
-## 5.1 redo log 和 undo log 的区别
+### 5.1 redo log 和 undo log 的区别
 
 | 特征       | Redo Log                                                     | Undo Log                                                     |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -57,14 +57,14 @@
 | 使用场景   | 用于数据库崩溃或者系统故障时的数据恢复。                     | 用于事务回滚或者数据库崩溃时的数据恢复。                     |
 | 持久性保障 | 保障事务提交后的修改操作可以永久保存。                       | 保障事务执行过程中的修改操作可以回滚。                       |
 
-
-
 `redo log`在事务执行过程中可以不断写入，而`binlog`只有在提交事务时才写入。详情查看[MySQL三大日志(binlog、redo log和undo log)详解 | JavaGuide](https://javaguide.cn/database/mysql/mysql-logs.html#两阶段提交)
 
 
 
 
 
-# 参考资料
+## 参考资料
 
 [MySQL三大日志(binlog、redo log和undo log)详解 | JavaGuide](https://javaguide.cn/database/mysql/mysql-logs.html#前言)
+
+[腾讯二面：MySQL 三大日志，介绍一下？ (qq.com)](https://mp.weixin.qq.com/s/f7E7e6qW_qk1hS0fIV_v6w)
