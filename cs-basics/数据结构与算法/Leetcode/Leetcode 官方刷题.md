@@ -28,21 +28,31 @@
 
 > 滑动窗口提单: [分享丨【题单】滑动窗口（定长/不定长/多指针） - 力扣（LeetCode）](https://leetcode.cn/circle/discuss/0viNMK/)
 
-
+[3. 无重复字符的最长子串 ](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：窗口多指针。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
 
 [1052. 爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner/submissions/526349960/?envType=daily-question&envId=2024-04-23)
 
-[2831. 找出最长等值子数组 - 力扣（LeetCode）](https://leetcode.cn/problems/find-the-longest-equal-subarray/description/?envType=daily-question&envId=2024-05-23): 窗口不定长
+[2831. 找出最长等值子数组](https://leetcode.cn/problems/find-the-longest-equal-subarray/description/?envType=daily-question&envId=2024-05-23): 窗口不定长
 
 
+
+### 动态规划
+
+[53. 最大子数组和 ](https://leetcode.cn/problems/maximum-subarray/solutions/228009/zui-da-zi-xu-he-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 动态规划。$f(i)$ 代表以第 i 个数结尾的「连续子数组的最大和」。值得注意的是，最大子数组和并不需要用到滑动窗口。
 
 
 
 ### 双指针
 
-[160. 相交链表 - 力扣](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
+[160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
 
-[283. 移动零 - 力扣（LeetCode）](https://leetcode.cn/problems/move-zeroes/?envType=study-plan-v2&envId=top-100-liked)
+[283. 移动零](https://leetcode.cn/problems/move-zeroes/?envType=study-plan-v2&envId=top-100-liked)
+
+
+
+### 回溯
+
+[78. 子集](https://leetcode.cn/problems/subsets/description/?envType=study-plan-v2&envId=top-100-liked)：子集问题。对于输入的数组 nums，考虑每个 nums[i] 是选还是不选，由此组合出 2^n个不同的子集。
 
 
 
@@ -58,6 +68,20 @@
 
 
 ## 二、结构目录
+
+### 子串
+
+[3. 无重复字符的最长子串 ](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：滑动窗口多指针。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
+
+[560. 和为 K 的子数组个数](https://leetcode.cn/problems/subarray-sum-equals-k/description/?envType=study-plan-v2&envId=top-100-liked)：前缀和 + 哈希表。前缀和为 pre - k 的元素，与当前元素前缀和为 pre 的元素，和刚好为k。同时，前缀和直接等于 k 的情况较为特殊，应当初始化 `map.put(0, 1)`
+
+
+
+### 数组
+
+[53. 最大子数组和 ](https://leetcode.cn/problems/maximum-subarray/solutions/228009/zui-da-zi-xu-he-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 动态规划。$f(i)$ 代表以第 i 个数结尾的「连续子数组的最大和」。值得注意的是，最大子数组和并不需要用到滑动窗口。
+
+
 
 ### 字符串
 
@@ -112,6 +136,14 @@
 [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)：最短路径问题，使用 迪杰斯特拉算法来解决
 
 [994. 腐烂的橘子 - 力扣（LeetCode）](https://leetcode.cn/problems/rotting-oranges/solutions/124765/fu-lan-de-ju-zi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 在图上进行多源广度优先搜索，实际上多源广度优先搜索可以理解为特殊的单源广度优先搜索。
+
+
+
+
+
+### 技巧
+
+[136. 只出现一次的数字 - 力扣（LeetCode）](https://leetcode.cn/problems/single-number/description/?envType=study-plan-v2&envId=top-100-liked)：利用异或运算的特性，在线性时间复杂度和常数空间复杂度中找到数组里面只出现一次的数字。
 
 
 

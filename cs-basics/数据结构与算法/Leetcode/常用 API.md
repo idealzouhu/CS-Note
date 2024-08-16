@@ -3,7 +3,7 @@
 [1738. 找出第 K 大的异或坐标值 - 力扣（LeetCode）](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/?envType=daily-question&envId=2024-05-26)
 
 ```
-^   重要数学知识： 对 x 异或两次 y ， 结果仍是 x .   x 异或 0 依旧为 x
+^   重要数学知识： 对 x 异或两次 ， 结果仍是 x .   x 异或 0 依旧为 x
 ```
 
 
@@ -42,6 +42,13 @@ Collections.sort(results, new Comparator<Integer>() {
 对于基本数据类型的数组排序（如`int[]`、`double[]`等），默认是**按照升序进行排序**。我们可以按照默认顺序来记住这个返回值和优先级的关系。
 
 
+
+### 数组
+
+```
+ return new int[]{0, 1};
+return new int[0];
+```
 
 
 

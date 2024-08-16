@@ -66,6 +66,8 @@ Java集合使用统一的`Iterator`遍历，尽量不要使用遗留接口。
 | `Queue, Deque` |                                                              | [`ArrayDeque`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayDeque.html) |                                                              | [`LinkedList`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/LinkedList.html) |                                                              |
 | `Map`          | [`HashMap`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashMap.html) |                                                              | [`TreeMap`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/TreeMap.html) |                                                              | [`LinkedHashMap`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/LinkedHashMap.html) |
 
+
+
 ## 2.2 遗留类和遗留接口
 
 需要注意的是，由于Java的集合设计非常久远，中间经历过大规模改进，我们要注意到有一小部分集合类是遗留类，不应该继续使用：

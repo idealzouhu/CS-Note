@@ -1,20 +1,48 @@
-# 一、 MySQL 安装
+## 一、 MySQL 本地环境部署
 
-[安装地址](https://downloads.mysql.com/archives/community/)
+### 1.1 安装 MySQL
 
-[安装](https://downloads.mysql.com/archives/installer/)
+在 [Mysql 下载官网](https://downloads.mysql.com/archives/installer/) 选择 MySQL Community Server 这一产品， 下载 `mysql-8.3.0-winx64.msi` 并安装软件。然后，在 MySQL Configurator 页面，配置安装目录、端口号、密码等设置。
 
-运行`MySQLInstallerLauncher.exe`程序，安装mysql
+![image-20240813202608921](images/image-20240813202608921.png)
 
-![image-20221022155325022](images/image-20221022155325022.png)
+比较重要的配置项有：
+
+- 安装路径：默认为 `C:\Program Files\MySQL\MySQL Server 8.3\` 
+
+- 默认端口号： 3306
+
+- 密码：随意设置为 root
+
+
+
+### 1.2 创建数据库
+
+```shell
+# 设置字符集(避免格式问题)
+$ SET NAMES 'utf8mb4';
+$ SET character_set_client = 'utf8mb4';
+$ SET character_set_connection = 'utf8mb4';
+$ SET character_set_results = 'utf8mb4';
+
+# 创建数据库
+$ CREATE DATABASE mydatabase CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_general_ci';
+
+# 导入数据文件
+$ use reggie
+$ source D:\resources\udb.sql
+
+# 退出 MySQL 命令行客户端
+exit
+```
 
 
 
 
 
-# 二、Docker 中部署 MySQL
+## 二、Docker 中部署 MySQL
 
-## 2.1 部署 MySQL
+### 2.1 部署 MySQL
 
 首先，从 Docker Hub 下载 
 
@@ -58,7 +86,7 @@ docker run --name mysql ^
 
 
 
-## 2.2 进入容器并创建数据库
+### 2.2 进入容器并创建数据库
 
 (1) 进入容器
 
@@ -99,10 +127,10 @@ exit
 
 ```shell
 # docker cp 语法
-docker cp /本地/路径/文件.sql 容器名称或ID:/容器内/路径/
+$ docker cp /本地/路径/文件.sql 容器名称或ID:/容器内/路径/
 
 # 举个例子
-C:\Users\zouhu>docker cp D:\Learning\project\12306\resources mysql:/resources/
+$ docker cp D:\Learning\project\12306\resources mysql:/resources/
 Successfully copied 8.22MB to mysql:/resources/
 ```
 
@@ -132,10 +160,10 @@ docker images   #可以看到该镜像已经创建成功，下次需要新建容
 举个例子，
 
 ```shell
-C:\Users\username>docker commit mysql mysqlcloud
+$ docker commit mysql mysqlcloud
 sha256:6953caac5bffdea0a7a867dc5fb483702f8b291e00759940aae8275f28966391
 
-C:\Users\username>docker images
+$ docker images
 REPOSITORY                      TAG            IMAGE ID       CREATED          SIZE
 mysqlcloud                      latest         6953caac5bff   11 seconds ago   457MB
 multi-container-app-todo-app    latest         4ce52cba239f   2 months ago     226MB
@@ -156,7 +184,7 @@ foxiswho/rocketmq               server-4.5.1   12d0d03473de   4 years ago      4
 
 
 
-## 2.3 Navicat 可视化工具连接
+### 2.3 Navicat 可视化工具连接
 
 在 `docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_HOST='%' -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.36` 语句中，我们已经设置好了端口号和密码。因此，Navicat 可视化工具连接中，我们可以这样填写信息：
 
@@ -167,11 +195,32 @@ foxiswho/rocketmq               server-4.5.1   12d0d03473de   4 years ago      4
 
 
 
+## 三、MySQL 环境配置
+
+mysql 自带的库主要有：
+
+```shell
+$ show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+```
 
 
-# 三、可能存在的问题
 
-## 3.1 1130 - Host ‘172.17.0.1‘ is not allowed to connect to this MySQL server
+
+
+
+
+## 四、可能存在的问题
+
+### 4.1 1130 - Host ‘172.17.0.1‘ is not allowed to connect to this MySQL server
 
 Navicat连接报错 ——1130 - Host ‘172.17.0.1‘ is not allowed to connect to this MySQL server
 
@@ -250,7 +299,7 @@ flush privileges ;
 
 
 
-# 参考资料
+## 参考资料
 
 [docker 安装mysql,并创建数据库_docker创建mysql数据库-CSDN博客](https://blog.csdn.net/u011937566/article/details/121111616)
 

@@ -83,9 +83,9 @@ void bfs(TreeNode root) {
 
 
 
+### DFS 遍历
+
 [200. 岛屿数量 - 力扣（LeetCode）](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)
-
-
 
 网格 DFS 遍历的框架代码：
 
@@ -110,7 +110,7 @@ boolean inArea(int[][] grid, int r, int c) {
 }
 ```
 
-**如何避免重复遍历呢？答案是标记已经遍历过的格子。**以岛屿问题为例，我们需要在所有值为 1 的陆地格子上做 DFS 遍历。每走过一个陆地格子，就把格子的值改为 2，这样当我们遇到 2 的时候，就知道这是遍历过的格子了。也就是说，每个格子可能取三个值：
+<font color="red">**如何避免重复遍历呢？答案是标记已经遍历过的格子。**</font>以岛屿问题为例，我们需要在所有值为 1 的陆地格子上做 DFS 遍历。每走过一个陆地格子，就把格子的值改为 2，这样当我们遇到 2 的时候，就知道这是遍历过的格子了。也就是说，每个格子可能取三个值：
 
 - 0 —— 海洋格子
 - 1 —— 陆地格子（未遍历过）
@@ -147,5 +147,7 @@ boolean inArea(int[][] grid, int r, int c) {
 
 
 ### BFS 遍历
+
+BFS 通常用于求**最短路径问题**。
 
 [994. 腐烂的橘子 - 力扣（LeetCode）](https://leetcode.cn/problems/rotting-oranges/solutions/129542/yan-du-you-xian-sou-suo-python3-c-by-z1m/?envType=study-plan-v2&envId=top-100-liked)

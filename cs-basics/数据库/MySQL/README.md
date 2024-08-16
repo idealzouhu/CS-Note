@@ -4,9 +4,9 @@
 
 [MySQL 日志详解](./MySQL 日志详解.md)：介绍 MySQL 日志种类和作用范围，并着重介绍 binlog 、redo log、undo log。
 
- [MYSQL 锁](MYSQL 锁.md) : 
+[MYSQL 锁](MYSQL 锁.md) : 
 
- [MySQL 存储引擎.md](MySQL 存储引擎.md) 
+[MySQL 存储引擎.md](MySQL 存储引擎.md) 
 
 
 
