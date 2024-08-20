@@ -11,9 +11,10 @@
 对于初学者而言，首要目标是 夯实基础。推荐：
 
 1. 官方文档
-2. [《高性能 MySQL 第四版》](https://www.jb51.net/books/873573.html)
+2. [《高性能 MySQL 第四版》](https://pan.baidu.com/share/init?surl=hdFh_qiJ7hEfAaoxUqopFg&pwd=jr7w)：MySQL领域的经典之作。第 7 章（创建高性能的索引）和第 8 章（查询性能优化） 十分值得阅读。
 3. 《MySQL 性能调优与架构设计》
 4. 《MySQL 技术内幕:InnoDB 存储引擎》
+5. 《数据库的索引涉及与优化》
 
 对于深入学习的人来说，我们需要结合具体的业务场景才能发挥其价值。推荐：
 
