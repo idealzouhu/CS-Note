@@ -10,6 +10,10 @@
 
 ### Java 资料
 
+[Start Here | Baeldung](https://www.baeldung.com/start-here)
+
+[Javadoop_首页](https://javadoop.com/)
+
 [Alibaba Java 技术图谱-阿里云开发者社区 (aliyun.com)](https://developer.aliyun.com/graph/java)
 
 《Java核心技术·卷 I（原书第11版） 基础知识》
@@ -30,13 +34,15 @@
 
 [2024年最值得收藏的Java并发编程学习路线（🔥） | 二哥的Java进阶之路 (javabetter.cn)](https://javabetter.cn/xuexiluxian/java/thread.html)
 
-
+[Java SE Specifications (oracle.com)](https://docs.oracle.com/javase/specs/index.html)
 
 
 
 ### JVM
 
-**[《深入理解 Java 虚拟机》](https://book.douban.com/subject/34907497/)**
+[Java SE Specifications (oracle.com)](https://docs.oracle.com/javase/specs/index.html)：Java 语言和 Java 虚拟机规范。
+
+**[《深入理解 Java 虚拟机  第三版》](https://book.douban.com/subject/34907497/)**
 
 
 

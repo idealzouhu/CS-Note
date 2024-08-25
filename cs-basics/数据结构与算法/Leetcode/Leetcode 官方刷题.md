@@ -42,11 +42,21 @@
 
 
 
+
+
 ### 双指针
+
+双指针可以将两趟 for 循环做到的事只用 一趟for 循环即可实现。
 
 [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked)：  利用双指针消除两个链表的长度差，找到两个链表的相交点
 
 [283. 移动零](https://leetcode.cn/problems/move-zeroes/?envType=study-plan-v2&envId=top-100-liked)
+
+[11. 盛最多水的容器 - 力扣（LeetCode）](https://leetcode.cn/problems/container-with-most-water/solutions/207215/sheng-zui-duo-shui-de-rong-qi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：双指针作为容器的左右边界。由于容纳的水量为 两个指针指向的数字中较小值∗指针之间的距离， 每次只用移动数字较小的指针即可。
+
+[3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：滑动窗口多指针 + 哈希表。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
+
+
 
 
 
@@ -71,7 +81,7 @@
 
 ### 子串
 
-[3. 无重复字符的最长子串 ](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：滑动窗口多指针。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
+[3. 无重复字符的最长子串 ](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：滑动窗口多指针 + 哈希表。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
 
 [560. 和为 K 的子数组个数](https://leetcode.cn/problems/subarray-sum-equals-k/description/?envType=study-plan-v2&envId=top-100-liked)：前缀和 + 哈希表。前缀和为 pre - k 的元素，与当前元素前缀和为 pre 的元素，和刚好为k。同时，前缀和直接等于 k 的情况较为特殊，应当初始化 `map.put(0, 1)`
 
@@ -85,7 +95,7 @@
 
 ### 字符串
 
-[2981. 找出出现至少三次的最长特殊子字符串 I - 力扣（LeetCode）](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/)：分类讨论问题，没有用到什么算法，但是**逻辑比较复杂**
+[2981. 找出出现至少三次的最长特殊子字符串 I ](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/)：分类讨论问题，没有用到什么算法，但是**逻辑比较复杂**
 
 
 
@@ -97,7 +107,9 @@
 
 ### 单调栈
 
-[496. 下一个更大元素 I - 力扣（LeetCode）](https://leetcode.cn/problems/next-greater-element-i/submissions/528626883/)
+[496. 下一个更大元素 I ](https://leetcode.cn/problems/next-greater-element-i/submissions/528626883/)：经典的单调栈使用方法。
+
+
 
 
 
@@ -131,11 +143,11 @@
 
 ### 图论
 
-[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/) ： 该题是[岛屿类问题](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-)中的一类问题，解法主要是如何在图上 DFS
+[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/) ： 该题是[岛屿类问题](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-)中的一类问题，解法主要是如何在图上进行深度优先搜索
 
 [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)：最短路径问题，使用 迪杰斯特拉算法来解决
 
-[994. 腐烂的橘子 - 力扣（LeetCode）](https://leetcode.cn/problems/rotting-oranges/solutions/124765/fu-lan-de-ju-zi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 在图上进行多源广度优先搜索，实际上多源广度优先搜索可以理解为特殊的单源广度优先搜索。
+[994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/solutions/124765/fu-lan-de-ju-zi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 在图上进行多源广度优先搜索，实际上多源广度优先搜索可以理解为特殊的单源广度优先搜索。
 
 
 
@@ -143,7 +155,7 @@
 
 ### 技巧
 
-[136. 只出现一次的数字 - 力扣（LeetCode）](https://leetcode.cn/problems/single-number/description/?envType=study-plan-v2&envId=top-100-liked)：利用异或运算的特性，在线性时间复杂度和常数空间复杂度中找到数组里面只出现一次的数字。
+[136. 只出现一次的数字](https://leetcode.cn/problems/single-number/description/?envType=study-plan-v2&envId=top-100-liked)：利用异或运算的特性，在线性时间复杂度和常数空间复杂度中找到数组里面只出现一次的数字。
 
 
 
