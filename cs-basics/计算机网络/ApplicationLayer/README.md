@@ -1,12 +1,18 @@
 ## HTTP 协议
 
-[HTTP协议概述.md](./HTTP协议概述.md): 涵盖了HTTP协议的基本概念和用途，包括请求和响应的结构、URL和URI的作用、常见的HTTP方法和状态码、请求头部和响应头部字段的含义，以及Cookie、缓存、安全性和Web服务等相关主题。文档还包含了一些示例和代码片段，便于更好地理解HTTP的应用和用法。
+[HTTP协议概述.md](./HTTP协议概述.md):   涵盖了HTTP协议的基本概念和用途
 
-[HTTP报文结构.md](./HTTP报文结构.md): 深入解析HTTP报文结构，包括方法、状态码和首部字段，揭示其在Web通信中的关键作用。
+[HTTP报文结构.md](./HTTP报文结构.md):  深入解析HTTP报文结构，包括方法、状态码和首部字段，揭示其在Web通信中的关键作用。
 
-[HTTP Cookie.md](./HTTP报文结构.md): 介绍了引入Cookie技术的原因，以及对Cookie的定义和详细的工作机制解析。
+[HTTP Cookie.md](./HTTP报文结构.md):  Cookie 用于在客户端和服务器之间传递会话信息，实现会话管理。
 
 [HTTPS协议.md](HTTPS协议.md)：阐述HTTP协议因采用明文传输数据导致安全通信上的不足。为了解决这一问题，需要将HTTP协议和 SSL/TLS协议结合。关于HTTPS协议，具体介绍了什么是HTTPS协议，HTTPS协议通信过程和HTTPS协议存在的不足。
+
+
+
+
+
+
 
 
 
@@ -20,7 +26,7 @@
 
 [HTTP 和 Websocket](HTTP 和 Websocket.md) 
 
-HTTP vs RPC 
+ [HTTP vs RPC.md](HTTP vs RPC.md) 
 
 
 

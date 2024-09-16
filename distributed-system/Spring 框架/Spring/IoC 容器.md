@@ -3,7 +3,7 @@
 `org.springframework.beans` 和 `org.springframework.beans` 是 Spring Framework 的 IoC 容器的基础。核心 IoC 容器的主要组件包括：
 
 - [**BeanFactory**](https://docs.spring.io/spring-framework/docs/6.1.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html): 容器的核心，负责配置、创建和管理应用对象（称为Bean）。
-- [**ApplicationContext**](https://docs.spring.io/spring-framework/docs/6.1.11/javadoc-api/org/springframework/context/ApplicationContext.html): BeanFactory的子接口，增加了对国际化、事件传播、资源加载等企业特定功能的支持。
+- [**ApplicationContext**](https://docs.spring.io/spring-framework/docs/6.1.11/javadoc-api/org/springframework/context/ApplicationContext.html):  BeanFactory的子接口，增加了对国际化、事件传播、资源加载等企业特定功能的支持。
 - **WebApplicationContext**：专门为Web应用设计的IOC容器
 - **Spring Expression Language** (SpEL): 一种功能强大的表达式语言，用于在运行时查询和操作对象图。
 

@@ -2,7 +2,7 @@
 
 [Spring MVC概述.md](./Spring MVC概述.md): 介绍 Spring MVC 设计模式
 
-[Spring MVC 工作原理.md](Spring MVC 工作原理.md) ：阐述 Spring MVC 的核心组件和工作原理
+[Spring MVC 工作原理.md](Spring MVC 工作原理.md) ：阐述 Spring MVC 的核心组件和工作流程
 
 
 

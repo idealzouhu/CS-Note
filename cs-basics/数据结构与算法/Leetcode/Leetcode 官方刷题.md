@@ -38,9 +38,13 @@
 
 ### 动态规划
 
+求最值的问题，当前问题可以缩减成子问题
+
 [53. 最大子数组和 ](https://leetcode.cn/problems/maximum-subarray/solutions/228009/zui-da-zi-xu-he-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 动态规划。$f(i)$ 代表以第 i 个数结尾的「连续子数组的最大和」。值得注意的是，最大子数组和并不需要用到滑动窗口。
 
+[279. 完全平方数](https://leetcode.cn/problems/perfect-squares/solutions/822940/wan-quan-ping-fang-shu-by-leetcode-solut-t99c/?envType=study-plan-v2&envId=top-100-liked)：完全背包 + 动态规划。状态转移方程涉及多个子问题，确实相对复杂。当前  `dp[i]` 的解需要通过遍历多个子问题  `dp[i - j^2]`  来确定。
 
+[322. 零钱兑换](https://leetcode.cn/problems/coin-change/solutions/132979/322-ling-qian-dui-huan-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：完全背包 + 动态规划。解题思路和[完全平方数](https://leetcode.cn/problems/perfect-squares/solutions/822940/wan-quan-ping-fang-shu-by-leetcode-solut-t99c/?envType=study-plan-v2&envId=top-100-liked)基本类似，状态转移方程涉及多个子问题，但是部分子问题是无解的。
 
 
 
@@ -56,13 +60,15 @@
 
 [3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：滑动窗口多指针 + 哈希表。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
 
-
+[15. 三数之和 - 力扣](https://leetcode.cn/problems/3sum/?envType=study-plan-v2&envId=top-100-liked)：双指针 + 排序。该题最重要的是如何通过排序来去重，找到不重复的三元组。
 
 
 
 ### 回溯
 
 [78. 子集](https://leetcode.cn/problems/subsets/description/?envType=study-plan-v2&envId=top-100-liked)：子集问题。对于输入的数组 nums，考虑每个 nums[i] 是选还是不选，由此组合出 2^n个不同的子集。
+
+[17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/solutions/388738/dian-hua-hao-ma-de-zi-mu-zu-he-by-leetcode-solutio/?envType=study-plan-v2&envId=top-100-liked)：组合问题。
 
 
 
@@ -91,6 +97,8 @@
 
 [53. 最大子数组和 ](https://leetcode.cn/problems/maximum-subarray/solutions/228009/zui-da-zi-xu-he-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 动态规划。$f(i)$ 代表以第 i 个数结尾的「连续子数组的最大和」。值得注意的是，最大子数组和并不需要用到滑动窗口。
 
+[56. 合并区间](https://leetcode.cn/problems/merge-intervals/solutions/203562/he-bing-qu-jian-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：排序算法。实现的语法稍微复杂。
+
 
 
 ### 字符串
@@ -109,7 +117,7 @@
 
 [496. 下一个更大元素 I ](https://leetcode.cn/problems/next-greater-element-i/submissions/528626883/)：经典的单调栈使用方法。
 
-
+[155. 最小栈 - 力扣（LeetCode）](https://leetcode.cn/problems/min-stack/description/?envType=study-plan-v2&envId=top-100-liked): 自定义栈。根据栈的特点，可以在常数时间内找出栈中的最小元素。
 
 
 
@@ -126,6 +134,10 @@
 [234. 回文链表 - 力扣（LeetCode）](https://leetcode.cn/problems/palindrome-linked-list/description/)：利用快慢指针找到链表的中间位置
 
 [21. 合并两个有序链表 - 力扣（LeetCode）](https://leetcode.cn/problems/merge-two-sorted-lists/?envType=study-plan-v2&envId=top-100-liked)：使用哑节点优化代码
+
+[2. 两数相加 ](https://leetcode.cn/problems/add-two-numbers/solutions/435246/liang-shu-xiang-jia-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：双指针直接遍历两个链表即可。
+
+[142. 环形链表 II - 力扣（LeetCode）](https://leetcode.cn/problems/linked-list-cycle-ii/solutions/441131/huan-xing-lian-biao-ii-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：快慢指针或者哈希表。这一题比较难理解，我直接用哈希表简单地解决。
 
 
 

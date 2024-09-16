@@ -18,6 +18,8 @@
 
 ### Bean 的作用域
 
+Bean 的作用域定义了 Bean 的生命周期和可见性。
+
 | Scope                                                        | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [singleton](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-singleton) | (**Default**) Scopes a single bean definition to a single object instance for each Spring IoC container. |
@@ -31,7 +33,15 @@
 
 无状态的 Bean 的使用 `singleton`,  而有状态的 Bean 使用 `prototype`。注意：有状态单例 Bean 存在线程安全问题。
 
+Spring 中的 Bean 默认都是单例的。
+
+
+
 具体细节查看 [Bean Scopes :: Spring Framework](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-prototype)
+
+
+
+
 
 
 
@@ -39,10 +49,10 @@
 
 Bean 的生命周期概括起来就是 **4 个阶段**：
 
-1. 实例化（Instantiation）
-2. 属性赋值（Populate）
-3. 初始化（Initialization）
-4. 销毁（Destruction）
+1. 实例化（Instantiation）：实例化一个 Bean 对象
+2. 属性赋值（Populate）：为 Bean 设置相关属性和依赖
+3. 初始化（Initialization）： 第 5、6 步为初始化操作，第 3、4 步为在初始化前执行，第 7 步在初始化后执行，该阶段结束，才能被用户使用；
+4. 销毁（Destruction）：第8步不是真正意义上的销毁），而是先在使用前注册了销毁的相关调用接口，为了后面第9、10步真正销毁 bean 时再执行相应的方法。
 
 ![Spring生命周期(概要)](images/Spring生命周期（概要）.png)
 
@@ -51,6 +61,10 @@ Bean 的生命周期概括起来就是 **4 个阶段**：
 [Customizing the Nature of a Bean :: Spring Framework](https://docs.spring.io/spring-framework/reference/core/beans/factory-nature.html#beans-factory-aware)
 
 
+
+
+
+注意： Spring 只管理单例模式 Bean 的完整生命周期。 对于 prototype 的 Bean，Spring 在创建好交给使用者之后，则不会再管理后续的生命周期
 
 
 

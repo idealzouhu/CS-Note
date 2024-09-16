@@ -20,3 +20,23 @@ API 生命周期主要包括：
 
 
 
+
+
+
+
+### Postman runner 
+
+用于批量测试
+
+
+
+### Postman Agent
+
+**When testing an API locally, you need to use the Postman Desktop Agent. You currently have a different Agent selected, which can’t send requests to the Localhost**
+
+
+
+
+
+
+

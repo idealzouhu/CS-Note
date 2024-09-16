@@ -48,6 +48,10 @@ Collections.sort(results, new Comparator<Integer>() {
 ```
  return new int[]{0, 1};
 return new int[0];
+
+// 数组克隆
+int[][] intervals；
+intervals[i].clone();
 ```
 
 
@@ -139,9 +143,9 @@ Math.abs()
 
 
 
+```
 substring（i， j） ： 提取字符串的子串 [i, j)
-
-
+```
 
 
 
@@ -196,6 +200,41 @@ int size = list.size(); // 获取列表的大小
 
 
 
+```java
+// Arrays.asList() 会返回一个定长的 List，然后将它传递给 ArrayList 构造函数来进行初始化
+List<String> list = new ArrayList<>(Arrays.asList("item1", "item2", "item3", "item4"));
+
+// 使用 Collections.addAll() 添加多个元素
+List<String> list = new ArrayList<>();
+Collections.addAll(list, "item1", "item2", "item3", "item4");
+
+```
+
+
+
+```
+ // List 里面的元素可以是 数组
+ List<int[]> ans = new ArrayList<>();
+```
+
+
+
+
+
+```
+// 将 ArrayList 中的元素转换为一个 Object 数组
+public Object[] toArray()
+
+// 将 ArrayList 中的元素复制到指定类型的数组里面。如果指定的数组足够大，ArrayList 元素将被放入该数组中；否则，将创建一个新数组。
+public <T> T[] toArray(T[] a)
+
+// 使用例子
+List<int[]> ans = new ArrayList<>();
+ans.toArray( new int[ans.size()][] )
+```
+
+
+
 
 
 ## Map  哈希表
@@ -237,6 +276,10 @@ class Solution {
 ```
 
 
+
+双括号 `{{ }}` 是一个语法技巧，被称为**双括号初始化**。它的本质是创建一个匿名类（即 `HashMap` 的匿名子类），然后在其中包含一个实例初始化块。
+
+<font color="red">**实例初始化块** `{}` </font>允许你在对象构造时执行代码块，就像构造函数一样。因此在这个匿名类的初始化块中，可以调用 `put()` 方法来初始化 `HashMap`。
 
 ```
   private static final Map<Character,Character> map = new HashMap<Character,Character>(){{

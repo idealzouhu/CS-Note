@@ -34,6 +34,18 @@ AOP 的工作原理是通过**代理模式**，将切面逻辑动态地织入到
 
 
 
+### 1.4 Spring AOP 和 AspectJ AOP 有什么区别
+
+**Spring AOP** 和 **AspectJ AOP** 都是面向切面编程（AOP）的实现方案，但在使实现方式、使用场景以及功能特性上有显著区别。
+
+- **实现方式**：
+  - **Spring AOP**:  基于**代理**（Proxy）机制，默认使用 JDK 动态代理或 CGLIB 代理实现。
+  - AspectJ AOP: 在编译时、类加载时甚至运行时进行**字节码操作**，使用独立的 AspectJ 编译器来处理切面逻辑。
+
+- 切入点表达式：
+  - **Spring AOP**: 仅支持**方法级别**的切面。它只支持切入方法调用的逻辑，无法切入构造函数、字段访问、静态方法等。
+  - **AspectJ AOP**: 支持更丰富的切入点表达式，包括**方法、构造函数、字段、静态方法、异常处理块**等。它能够对代码的更多方面进行切入和增强。
+
 
 
 ## 二、Spring AOP
@@ -41,7 +53,7 @@ AOP 的工作原理是通过**代理模式**，将切面逻辑动态地织入到
 在 Spring 框架里面，AOP 解决方案主要有：
 
 - 基于代理的框架（如 Spring AOP）
--  AspectJ 框架 （Spring 将 Spring AOP和IoC与AspectJ无缝集成）
+-  AspectJ 框架 （Spring 将 Spring AOP 和 IoC 与 AspectJ 无缝集成）
 
 
 
@@ -58,6 +70,8 @@ AOP 的工作原理是通过**代理模式**，将切面逻辑动态地织入到
 | [@Around](https://docs.spring.io/spring-framework/reference/6.0/core/aop/ataspectj/advice.html#aop-ataspectj-around-advice) | 环绕通知，围绕目标方法执行           |
 
 注意，**切面类需要被识别为bean，**以便Spring AOP框架能够管理和应用切面。
+
+
 
 
 
@@ -92,7 +106,7 @@ public class LoggingAspect {
 
 ### 2.3 切入点表达式语法
 
-切入点表达式用于定义在哪些连接点（JoinPoint）上应用通知（Advice）。
+切入点表达式用于定义在哪些连接点（ JoinPoint ）上应用通知（ Advice）。
 
 常用的[表达式]([Declaring a Pointcut :: Spring Framework](https://docs.spring.io/spring-framework/reference/6.0/core/aop/ataspectj/pointcuts.html#aop-pointcuts-designators))有：
 

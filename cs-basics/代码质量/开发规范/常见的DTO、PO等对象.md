@@ -1,0 +1,1 @@
+[BO、VO、PO、DO、DTO分不清楚？在项目中到底代表啥，分别的的作用是啥？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1uu4ZeTEej/?spm_id_from=333.1007.tianma.5-4-18.click&vd_source=52cd9a9deff2e511c87ff028e3bb01d2)

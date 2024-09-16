@@ -28,7 +28,13 @@
 
 
 
-## 五、细节补充
+## 二、三大日志之间的关系
+
+事务提交后，redo log 和 binlog 都要持久化到磁盘，
+
+undolog 则是通过 redo log 来保证持久化。因为MySQL事务执⾏过程中产⽣的Undo Log也需要进⾏持久化操作，所以 **Undo Log也会产⽣Redo Log**。由于Undo Log的完整性和可靠性需要Redo Log来保证，因此数据库崩溃时需要先做Redo Log数据恢复，然后做Undo Log回滚。
+
+
 
 ### 5.1 redo log 和 undo log 的区别
 

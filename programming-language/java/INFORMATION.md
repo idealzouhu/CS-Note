@@ -36,13 +36,27 @@
 
 [Java SE Specifications (oracle.com)](https://docs.oracle.com/javase/specs/index.html)
 
+[《JAVA并发编程实战》](https://pan.baidu.com/s/1vqniQ6vF_-v0oyqfEpLuFA)：推荐阅读，比较遗憾的是，这本书按照 Jdk 1.6 来讲解。
+
+[《Java并发编程之美》](https://gitee.com/zhuxiaow/books/raw/master/Java并发编程之美.pdf)：讲的比较简单。
+
+
+
+
+
 
 
 ### JVM
 
 [Java SE Specifications (oracle.com)](https://docs.oracle.com/javase/specs/index.html)：Java 语言和 Java 虚拟机规范。
 
-**[《深入理解 Java 虚拟机  第三版》](https://book.douban.com/subject/34907497/)**
+**[《深入理解 Java 虚拟机  第三版》](https://book.douban.com/subject/34907497/)**：强烈推荐。
+
+
+
+### 
+
+
 
 
 

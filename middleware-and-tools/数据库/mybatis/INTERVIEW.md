@@ -2,7 +2,7 @@
 
 - 创建 DTO 类。
 
-- 使用 resultType。 可能会需要修改实体类。
+- 使用 `resultType`。 可能会需要修改实体类。
 
 [MyBatis实现多表查询_mybatis两表联查条件查询-CSDN博客](https://blog.csdn.net/Mq_sir/article/details/116400731)
 
@@ -28,3 +28,11 @@ SELECT * FROM user WHERE name = ?
 ```
 
 这里的 `${column}` 是直接替换为 `name` 字符串，而 `#{value}` 则被安全地绑定为一个参数占位符。
+
+
+
+
+
+### 参考资料
+
+[MyBatis 常见面试题37道-包含答案_mybatis面试-CSDN博客](https://blog.csdn.net/Wyxl990/article/details/136049772)
