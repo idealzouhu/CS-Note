@@ -30,9 +30,15 @@
 
 
 
-### 分布式 ID 和 锁
+### 分布式 ID 
 
 [说说唯一ID与CAS｜得物技术 (qq.com)](https://mp.weixin.qq.com/s/ZLaIt0JNBn0t6SQHzc3knQ)
+
+
+
+### 分布式锁
+
+
 
 
 

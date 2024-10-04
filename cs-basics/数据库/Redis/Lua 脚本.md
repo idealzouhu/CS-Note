@@ -124,3 +124,38 @@ EVAL "redis.call('HMSET', KEYS[1], unpack(ARGV, 1, #ARGV - 1)); redis.call('EXPI
 
 
 
+
+
+
+
+### 使用过程中存在的问题
+
+错误案例：
+
+```bash
+$ GET test
+
+$ DEL test
+
+$ EVAL "local key = KEYS[1]; local value = ARGV[1]; local expire_time_ms = ARGV[2]; local result = redis.call('SET', key, value, 'NX', 'PX', expire_time_ms); if result == 'OK' then return 'ok1' else return 'ok2' end" 1 test testValue 60000
+"ok2"
+```
+
+理论上来说， 应该返回 ‘ok1’
+
+
+
+正确案例
+
+```bash
+$ GET test
+
+$ DEL test
+
+$ EVAL "local key = KEYS[1]; local value = ARGV[1]; local expire_time_ms = ARGV[2]; if redis.call('SET', key, value, 'NX', 'PX', expire_time_ms) then return 'ok1' else return 'ok2' end" 1 test testValue 60000
+"ok1"
+
+$ EVAL "local key = KEYS[1]; local value = ARGV[1]; local expire_time_ms = ARGV[2]; if redis.call('SET', key, value, 'NX', 'PX', expire_time_ms) then return 'ok1' else return 'ok2' end" 1 test testValue 60000
+"ok2"
+```
+

@@ -9,7 +9,10 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 }
 ```
 
+HaahMap 的特点有：
 
+- **每个键在 `HashMap` 中是唯一的**。如果插入了具有相同哈希值的键，后插入的键值对会覆盖先插入的键值对。
+- `HashMap` 使用哈希表作为底层数据结构，键通过哈希函数计算出哈希值，并存储在相应的桶中。
 
 
 
@@ -270,6 +273,54 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 ### 为什么 HashMap 需要 equals 方法
 
 hashCode相等的两个对象，equals 不一定相等（比如散列冲突的情况）
+
+
+
+
+
+### HashMap 提供的 clone() 方法为浅克隆
+
+在 `HashMap` 的 `clone()` 方法中，只是复制了内部的结构（例如桶数组、链表头节点等），但并没有递归复制这些结构所引用的对象。所以 `HashMap` 是浅克隆。
+
+```
+HashMap<String, String> originalMap = new HashMap<>();
+originalMap.put("key1", "value1");
+
+HashMap<String, String> shallowClonedMap = (HashMap<String, String>) originalMap.clone();
+
+// 浅克隆，两个 HashMap 中的元素指向相同的对象
+System.out.println(originalMap.get("key1") == shallowClonedMap.get("key1"));  // 输出 true
+```
+
+深克隆的代码为：
+
+```java
+public class HashMapDeepClone {
+
+    public static void main(String[] args) {
+        // 创建原始 HashMap
+        HashMap<String, MyObject> originalMap = new HashMap<>();
+        originalMap.put("key1", new MyObject("value1"));
+        originalMap.put("key2", new MyObject("value2"));
+
+        // 使用 Stream 进行深克隆
+        HashMap<String, MyObject> deepClonedMap = originalMap.entrySet()
+                .stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,                        // 克隆键
+                        entry -> entry.getValue().deepClone(),    // 深克隆值
+                        (e1, e2) -> e1,                           // 处理键冲突（这里不会发生）
+                        HashMap::new                              // 创建新的 HashMap
+                ));
+
+        // 验证深克隆
+        System.out.println(originalMap.get("key1") == deepClonedMap.get("key1"));  // 输出 false，表明是不同的对象
+        System.out.println(originalMap.get("key1").getData().equals(deepClonedMap.get("key1").getData()));  // 输出 true，表明数据一致
+    }
+}
+```
+
+
 
 
 

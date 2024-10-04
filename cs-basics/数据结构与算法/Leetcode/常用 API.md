@@ -98,6 +98,25 @@ int[] clonedArray = originalArray.clone();
 
 
 
+将数组转换为列表
+
+```
+Integer[] dp;
+Arrays.asLisst(dp);
+```
+
+其中，数据类型必须为 包装类型。
+
+
+
+
+
+```
+Arrays.equals(arr1, arr2);
+```
+
+
+
 ## 包装类
 
 ```java
@@ -141,11 +160,22 @@ Math.abs()
         int length = str.length();
 ```
 
-
-
 ```
 substring（i， j） ： 提取字符串的子串 [i, j)
 ```
+
+
+
+数组和String 之间相互转换 [49. 字母异位词分组 - 力扣（LeetCode）](https://leetcode.cn/problems/group-anagrams/solutions/520469/zi-mu-yi-wei-ci-fen-zu-by-leetcode-solut-gyoc/?envType=study-plan-v2&envId=top-100-liked)
+
+```
+String str;
+char[] array = str.toCharArray();
+
+String key = new String(array);
+```
+
+
 
 
 
@@ -200,6 +230,22 @@ int size = list.size(); // 获取列表的大小
 
 
 
+泛型使用时的注意事项
+
+```
+// 当你使用嵌套泛型时，应该在右边使用与左边完全一致的泛型类型
+// List<Integer> 和 ArrayList<Integer> 不是相同的泛型
+List<List<Integer>> ans = new ArrayList<ArrayList<Integer>>(); // 错误
+ 
+ 
+// 同时，我们使用菱形操作符来简化
+ List<List<Integer>>  ans = new ArrayList<>(); // 正确
+```
+
+
+
+添加元素
+
 ```java
 // Arrays.asList() 会返回一个定长的 List，然后将它传递给 ArrayList 构造函数来进行初始化
 List<String> list = new ArrayList<>(Arrays.asList("item1", "item2", "item3", "item4"));
@@ -209,6 +255,22 @@ List<String> list = new ArrayList<>();
 Collections.addAll(list, "item1", "item2", "item3", "item4");
 
 ```
+
+
+
+ArrayList 构造方法如何处理数组
+
+构造方法
+
+```
+Map<String, List<String>> map = new HashMap<>();
+
+....
+
+return new ArrayList<List<String>>(map.values());
+```
+
+
 
 
 
@@ -298,6 +360,22 @@ class Solution {
 ```
 
 代码中，我们使用了匿名函数 lambda 表达式 **x -> new ArrayList<>()** 作为重新映射函数，prices.computeIfAbsent() 将 lambda 表达式返回的新值关联到 x。
+
+
+
+
+
+[347. 前 K 个高频元素 - 力扣（LeetCode）](https://leetcode.cn/problems/top-k-frequent-elements/?envType=study-plan-v2&envId=top-100-liked)
+
+```
+// 将 Map 的 values 转为 Integer[]，再转换为 int[]
+int[] frequence = map.values().stream().mapToInt(Integer::intValue).toArray();
+
+```
+
+
+
+
 
 
 

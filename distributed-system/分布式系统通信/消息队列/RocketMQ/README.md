@@ -2,6 +2,10 @@
 
 Apache RocketMQ 是一款典型的分布式架构下的中间件产品，使用**异步通信方式和发布订阅**的消息传输模型。在学习 RocketMQ 之前，建议阅读官网 [RocketMQ 4. (apache.org)](https://rocketmq.apache.org/zh/docs/) 和 [RocketMQ 4.x (apache.org)](https://rocketmq.apache.org/zh/docs/4.x/)。这两个版本的官方文档可以相互补充。
 
+[rocketmq/docs/cn/best_practice.md at develop · apache/rocketmq (github.com)](https://github.com/apache/rocketmq/blob/develop/docs/cn/best_practice.md) 总结了使用的最佳实践。
+
+
+
  [RocketMQ 整体架构.md](RocketMQ 整体架构.md) : 集群部署模型。
 
  [领域模型.md](领域模型.md) : 给出 RocketMQ 领域模型中所有组件的相关概念
@@ -10,7 +14,7 @@ Apache RocketMQ 是一款典型的分布式架构下的中间件产品，使用*
 
  [mqadmin 工具的使用.md](mqadmin 工具的使用.md) ：
 
- [Dashboard 可视化工具的使用.md](Dashboard 可视化工具的使用.md) ：在使用过程中，重新学习 Docker Network 
+ [Dashboard 可视化工具的使用.md](Dashboard 可视化工具的使用.md) ：学习 Dashboard 工具的使用。在使用过程中，解决了 Docker Network 的相关 bug。
 
 
 

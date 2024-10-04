@@ -232,6 +232,8 @@ $ docker inspect rocketmq-dashboard --format '{{json .NetworkSettings.Networks}}
 
 
 
+
+
 ## 参考资料
 
 [RocketMQ Dashboard | RocketMQ (apache.org)](https://rocketmq.apache.org/zh/docs/deploymentOperations/04Dashboard)

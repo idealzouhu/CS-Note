@@ -43,6 +43,33 @@ Jedis 和 Redisson 都是 Java 中用于操作 Redis 的客户端库，它们提
 
 
 
+
+
+### Redis 使用依赖
+
+如果只是需要基础的 Redis 功能（如缓存、数据存储、发布/订阅等），可以使用 **`spring-boot-starter-data-redis`**。
+
+如果项目中需要高级的 Redis 功能，特别是分布式锁、分布式集合等场景，建议使用 **`redisson-spring-boot-starter`**，因为它提供了更加丰富的功能。
+
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+<dependency>
+    <groupId>org.redisson</groupId>
+    <artifactId>redisson-spring-boot-starter</artifactId>
+    <version>3.12.0</version>
+</dependency>
+```
+
+
+
+
+
+
+
 ### 参考资料
 
 [Redis 为什么这么快？](https://javaguide.cn/database/redis/redis-questions-01.html#redis-为什么这么快)

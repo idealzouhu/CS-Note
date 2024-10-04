@@ -44,7 +44,14 @@
 
 ### 使用 Deque 对栈进行建模
 
-
+| LIFO Operation | Method                                                       | Behavior when the queue is full or empty                     |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| push           | [`addFirst(element)`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Deque.html#addFirst(E)) | throws an [`IllegalStateException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/IllegalStateException.html) |
+|                | [`offerFirst(element)`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Deque.html#offerFirst(E)) | returns `false`                                              |
+| pop            | [`removeFirst()`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Deque.html#removeFirst()) | throws a [`NoSuchElementException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/NoSuchElementException.html) |
+|                | [`pollFirst()`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Deque.html#pollFirst()) | returns `null`                                               |
+| peek           | [`getFirst()`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Deque.html#getFirst()) | throws a [`NoSuchElementException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/NoSuchElementException.html) |
+|                | [`peekFirst()`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Deque.html#peekFirst()) | returns `null`                                               |
 
 
 
@@ -79,3 +86,4 @@
 ### 参考资料
 
 [Storing Elements in Stacks and Queues - Dev.java](https://dev.java/learn/api/collections-framework/stacks-queues/)
+

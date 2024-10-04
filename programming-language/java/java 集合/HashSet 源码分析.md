@@ -82,4 +82,4 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
 ### LinkedHashSet 类简介
 
-LinkedHashSet 不仅保证元素的唯一性，还保持元素的插入顺序。
+LinkedHashSet 不仅保证元素的唯一性，还**保持元素的插入顺序**。

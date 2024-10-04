@@ -1,6 +1,6 @@
 [TOC]
 
-# 一、Windows环境下安装 Redis
+## 一、Windows环境下安装 Redis
 
 windows系统环境下，redis安装方式主要有：
 
@@ -13,7 +13,7 @@ windows系统环境下，redis安装方式主要有：
 
 
 
-## 1.1 下载Redis
+### 1.1 下载Redis
 
 在[Releases · tporadowski/redis (github.com)](https://github.com/tporadowski/redis/releases)下载 `Redis-x64-5.0.14.1.zip` 这个版本。然后，将压缩包解压缩到指定的目录里面（比如`D:\Program Files\redis-5.0.14`）
 
@@ -21,7 +21,7 @@ windows系统环境下，redis安装方式主要有：
 
 
 
-## 1.2 启动redis服务器
+### 1.2 启动redis服务器
 
 在Redis的安装目录（`D:\Program Files\redis-5.0.14`）下打开cmd窗口，然后执行命令来启动服务：
 
@@ -43,7 +43,7 @@ redis-server.exe redis.windows.conf
 
 
 
-## 1.3 启动redis客户端
+### 1.3 启动redis客户端
 
 在Redis的安装目录（`D:\Program Files\redis-5.0.14`）下打开cmd窗口，然后执行命令来启动redis客户端：
 
@@ -69,7 +69,7 @@ ping
 
 
 
-## 1.4 配置环境变量
+### 1.4 配置环境变量
 
 为了方便，将Redis路径（`D:\Program Files\redis-5.0.14`）配置到系统变量Path值中
 
@@ -87,9 +87,9 @@ redis-server
 
 
 
-# 二、Linux环境下安装redis
+## 二、Linux环境下安装redis
 
-## 2.1 下载redis
+### 2.1 下载redis
 
 在[redis官网](https://redis.io/download)下载 `redis-6.2.14` 这个版本。然后，将压缩包解压缩到指定的目录里面（比如`D:\Program Files\redis-6.2.14`）
 
@@ -99,7 +99,7 @@ redis-server
 
 
 
-# 三、Docker 安装并部署 Redis
+## 三、Docker 安装并部署 Redis
 
 首先，从 Docker Hub 下载 
 
@@ -128,7 +128,7 @@ docker run -p 6379:6379 --name redis  -d redis redis-server --requirepass "12345
 
 
 
-# 参考资料
+## 参考资料
 
 [Window下Redis的安装和部署详细图文教程（Redis的安装和可视化工具的使用）_redis windows-CSDN博客](https://blog.csdn.net/weixin_44893902/article/details/123087435)
 

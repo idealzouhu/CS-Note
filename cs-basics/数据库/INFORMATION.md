@@ -10,7 +10,7 @@
 
 对于初学者而言，首要目标是 夯实基础。推荐：
 
-1. 官方文档
+1. [官方文档](https://dev.mysql.com/doc/refman/8.4/en/)：MySQL Server 的详细教程
 2. [《高性能 MySQL 第四版》](https://pan.baidu.com/share/init?surl=hdFh_qiJ7hEfAaoxUqopFg&pwd=jr7w)：MySQL领域的经典之作。第 7 章（创建高性能的索引）和第 8 章（查询性能优化） 十分值得阅读。
 3. 《MySQL 性能调优与架构设计》
 4. 《MySQL 技术内幕:InnoDB 存储引擎》

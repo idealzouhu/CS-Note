@@ -1,12 +1,16 @@
-## MySQL 基础
+### 目录说明
 
-[MySQL 安装及配置](./MySQL 安装及配置.md):  详细介绍 MySQL 的安装步骤；探索在 Docker 中部署 MySQL，包括数据库创建、数据导入，并使用 Navicat 实现便捷可视化连接。
+ [MySQL 基础](MySQL 基础) ：阐述 MySQL 的常见知识点，如整体结构和数据页组成。部分细节会在其他目录中重新描述。
 
-[MySQL 日志详解](./MySQL 日志详解.md)：介绍 MySQL 日志种类和作用范围，并着重介绍 binlog 、redo log、undo log。
+ [MySQL 事务](MySQL 事务) ：描述锁和MVCC 如何实现事务并发隔离级别。
 
-[MYSQL 锁](MYSQL 锁.md) : 
+ [MySQL 性能优化](MySQL 性能优化) ：介绍 MySQL 查询语句优化流程， 并给出了其他的优化方案。
 
-[MySQL 存储引擎.md](MySQL 存储引擎.md) 
+ [MySQL 实践](MySQL 实践) ：总结 MySQL 安装、配置和使用过程中遇到的一系列问题。
+
+ [MySQL 备份](MySQL 备份) ：着重讲解了 MySQL binlog 日志在主从数据同步过程中的使用。
+
+
 
 
 
@@ -31,6 +35,4 @@
  [手写sql语句](手写sql语句.md)：某些公司笔试会要求我们手写 sql 题目，我们因此提前熟悉 sql 相关语法
 
 
-
-## 细节补充
 

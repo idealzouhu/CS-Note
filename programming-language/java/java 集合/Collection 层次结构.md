@@ -25,7 +25,7 @@
 
 
 
-### 3.1.1 相关资料
+### 参考资料
 
 [Extending Collection with List - Dev.java](https://dev.java/learn/api/collections-framework/lists/)
 

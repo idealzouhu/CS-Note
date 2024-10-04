@@ -4,6 +4,12 @@
 
 
 
+### 什么是 Session
+
+<img src="images/image-20240920223520767.png" alt="image-20240920223520767" style="zoom:50%;" />
+
+
+
 
 
 ## Session 的缺陷
