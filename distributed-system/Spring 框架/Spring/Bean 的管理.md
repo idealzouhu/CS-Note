@@ -62,6 +62,8 @@ Bean 的生命周期概括起来就是 **4 个阶段**：
 
 
 
+为什么了解生命周期？可以使用 `@PostConstruct` 注解指定初始化方法，使用 `@PreDestroy` 注解指定销毁方法。
+
 
 
 注意： Spring 只管理单例模式 Bean 的完整生命周期。 对于 prototype 的 Bean，Spring 在创建好交给使用者之后，则不会再管理后续的生命周期

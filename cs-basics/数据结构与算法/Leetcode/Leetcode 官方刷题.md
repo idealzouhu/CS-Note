@@ -80,7 +80,9 @@
 
 [3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)：滑动窗口多指针 + 哈希表。使用两个指针表示字符串中的某个子串（或窗口）的左右边界， 利用哈希集合判断是否有重复的字符。
 
-[15. 三数之和 - 力扣](https://leetcode.cn/problems/3sum/?envType=study-plan-v2&envId=top-100-liked)：双指针 + 排序。该题最重要的是如何通过排序来去重，找到不重复的三元组。
+[15. 三数之和](https://leetcode.cn/problems/3sum/?envType=study-plan-v2&envId=top-100-liked)：双指针 + 排序。该题最重要的是如何通过排序来去重，找到不重复的三元组。
+
+[75. 颜色分类](https://leetcode.cn/problems/sort-colors/?envType=study-plan-v2&envId=top-100-liked)：双指针 。关键在于如何交换数据。
 
 
 
@@ -97,6 +99,8 @@
 [17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/solutions/388738/dian-hua-hao-ma-de-zi-mu-zu-he-by-leetcode-solutio/?envType=study-plan-v2&envId=top-100-liked)：组合问题 + 多阶树。
 
 [39. 组合总和](https://leetcode.cn/problems/combination-sum/?envType=study-plan-v2&envId=top-100-liked)：组合问题 + 二阶树。
+
+[22. 括号生成 ](https://leetcode.cn/problems/generate-parentheses/submissions/570509199/?envType=study-plan-v2&envId=top-100-liked)：组合问题 + 二阶树 + 限制条件。关键点在于选择分支时存在条件限制。
 
 [79. 单词搜索](https://leetcode.cn/problems/word-search/?envType=study-plan-v2&envId=top-100-liked)：搜索问题 + 树枝去重 + 图 DFS。利用 visited 数组标识每个位置是否被访问过，给出了在图中如果进行回溯法的案例。
 
@@ -135,6 +139,8 @@
 
 [238. 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/?envType=study-plan-v2&envId=top-100-liked)：前缀和问题。
 
+[189. 轮转数组](https://leetcode.cn/problems/rotate-array/description/?envType=study-plan-v2&envId=top-100-liked): 模运算。空间复杂度较高，后续可以优化。
+
 
 
 
@@ -147,7 +153,13 @@
 
 ### 矩阵
 
-[73. 矩阵置零 ](https://leetcode.cn/problems/set-matrix-zeroes/solutions/669901/ju-zhen-zhi-ling-by-leetcode-solution-9ll7/?envType=study-plan-v2&envId=top-100-liked) ： 利用问题本身提供的数组来当作标记数组，节省空间以便实现原地算法
+[73. 矩阵置零 ](https://leetcode.cn/problems/set-matrix-zeroes/solutions/669901/ju-zhen-zhi-ling-by-leetcode-solution-9ll7/?envType=study-plan-v2&envId=top-100-liked):  利用问题本身提供的数组来当作标记数组，节省空间以便实现原地算法
+
+[54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/description/?envType=study-plan-v2&envId=top-100-liked)：螺旋遍历矩阵。
+
+[48. 旋转图像 ](https://leetcode.cn/problems/rotate-image/description/?envType=study-plan-v2&envId=top-100-liked): 推理过程很复杂，不是很会做。
+
+
 
 
 
@@ -199,7 +211,7 @@
 
 [138. 随机链表的复制 ](https://leetcode.cn/problems/copy-list-with-random-pointer/submissions/569419046/?envType=study-plan-v2&envId=top-100-liked): 链表创建+哈希表。哈希表用于避免重复创建相同的节点，并解决链表中可能出现的循环问题。这个有点类似 Spring 的三级缓存机制。
 
-[146. LRU 缓存](https://leetcode.cn/problems/lru-cache/description/?envType=study-plan-v2&envId=top-100-liked)：双向链表 + 哈希表。难点在于数据结构的选型和双向链表的基本操作。
+[146. LRU 缓存](https://leetcode.cn/problems/lru-cache/description/?envType=study-plan-v2&envId=top-100-liked)：双向链表 + 哈希表。难点在于数据结构的选型和双向链表的基本操作。链表头节点为最近使用的结点。
 
 **(2) 双指针**
 

@@ -179,6 +179,17 @@ String key = new String(array);
 
 
 
+```
+  String number = "-7";
+ 
+  // 返回基本类型 int
+  int result = Integer.parseInt(number);
+  // 返回基本类型 Integer
+  Integer result2 = Integer.valueOf(number);
+```
+
+
+
 ## StringBuider
 
 | 方法                                      | 描述                                                         |

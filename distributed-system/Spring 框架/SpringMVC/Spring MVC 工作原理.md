@@ -16,8 +16,8 @@ DispatcherServlet 是前端控制器设计模式的实现，提供 Spring Web MV
 
 Spring MVC的工作原理如下：
 
-1. **请求进入**： 客户端所有的请求都提交给 DispatcherServlet,它会委托应用系统的其他模块负责负责对请求进行真正的处理工作。 
-2. **查询 `Handler`**： DispatcherServlet 查询一个或多个 HandlerMapping , 找到处理请求的 Handler。
+1. **请求进入**： 客户端所有的请求都提交给 `DispatcherServlet`,它会委托应用系统的其他模块负责负责对请求进行真正的处理工作。 
+2. **查询 `Handler`**： `DispatcherServlet` 查询一个或多个 `HandlerMapping` , 找到处理请求的 `Handler`。
 3. **匹配 `HandlerAdapter`** ：找到 `Handler` 后，`DispatcherServlet` 会根据 `Handler` 的类型，选择一个合适的 `HandlerAdapter`。不同的 `Handler` 可能需要不同的 `HandlerAdapter` 来适配，比如 `RequestMappingHandlerAdapter` 适用于基于注解的控制器方法。
 4. **调用 `HandlerAdapter`**： `HandlerAdapter` 调用 `Handler` 来处理请求，并执行与之相关的业务逻辑。最后，`HandlerAdapter`  将 `Handler`  的执行结果包装成`ModelAndView` ， 并返回给 `DispatcherServlet`   。
 5. **视图解析**：`DispatcherServlet` 查询一个或多个 `ViewResolver` 视图解析器, 找到 `ModelAndView` 对象指定的视图对象 。

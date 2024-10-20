@@ -26,10 +26,6 @@ Redis 集群中的键空间被划分为 **16384 个哈希槽**，这也意味着
 HASH_SLOT = CRC16(key) mod 16384
 ```
 
-
-
-
-
 具体细节查看 [Key distribution model| Docs](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/#key-distribution-model)
 
 

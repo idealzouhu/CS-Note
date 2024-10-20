@@ -1,8 +1,8 @@
-# 一、Spring MVC 常用注解
+## 一、Spring MVC 常用注解
 
-## 1.1 控制器
+### 1.1 控制器
 
-### 1.1.1 @Controller
+#### 1.1.1 @Controller
 
 在Spring MVC中，`@Controller` 注解用于标识一个类作为控制器，用于处理Web请求。当将 `@Controller` 注解应用于类上时，Spring容器会自动将这个类识别为一个Bean，并将其实例化和管理。
 
@@ -10,7 +10,7 @@
 
 
 
-### 1.1.2 @RestController
+#### 1.1.2 @RestController
 
 `@RestController` 是 Spring 框架中的一个注解，它是 `@Controller `注解和 `@ResponseBody` 注解的组合。它的作用是**将一个类标识为 RESTful 风格的控制器**，用于处理 HTTP 请求并返回数据，通常用于构建 RESTful API。
 
@@ -20,9 +20,9 @@
 
 
 
-## 1.2 HTTP 请求控制处理
+### 1.2 HTTP 请求控制处理
 
-### 1.2.1 @RequestMapping
+#### 1.2.1 @RequestMapping
 
 @RequestMapping 注解是用来**映射 Web 请求** (访问路径和参数)、处理类和方法的。
 
@@ -32,7 +32,7 @@
 
 
 
-### 1.2.2 @ResponseBody 
+#### 1.2.2 @ResponseBody 
 
 @ResponseBody 支持**将返回值放在 response 体内**，而不是返回一个页面。
 
@@ -40,7 +40,7 @@
 
 
 
-### 1.2.3 @RequestBody
+#### 1.2.3 @RequestBody
 
 通常，HTTP 请求中的参数会作为URL的一部分（例如，在GET请求中）或者作为表单数据（例如，在POST请求中）发送。但是有些情况下，特别是当需要发送复杂的数据结构（例如 JSON 或 XML 格式的数据）时，将参数放在请求体中更为方便。
 
@@ -78,7 +78,7 @@ class CreateUserRequest {
 
 
 
-### 1.2.4  @PathVariable
+#### 1.2.4  @PathVariable
 
 `@PathVariable `是 Spring 框架中用于处理 URL 路径中的参数的注解。通常，HTTP 请求中的参数会作为URL的一部分发送，例如 `/users/{id}`，其中 `{id} `就是一个路径参数。`@PathVariable` 注解就是用来获取这些路径参数的值。
 
@@ -120,7 +120,7 @@ public String getUserById(@PathVariable("userId") Long id) {
 
 
 
-### 1.2.5  `@RequestParam` 
+#### 1.2.5  `@RequestParam` 
 
 请求参数（Request Parameters）是客户端向服务器发送请求时传递的数据，通常包含在 URL 查询字符串或请求体中。在 HTTP 请求中，参数以键值对的形式发送，例如 `?key1=value1&key2=value2`。
 
@@ -139,4 +139,4 @@ public String exampleHandler(@RequestParam String key) {
 
 
 
-# 二、前后端数据交互注解
+## 二、前后端数据交互注解
