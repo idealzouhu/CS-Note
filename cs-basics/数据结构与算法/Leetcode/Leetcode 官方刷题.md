@@ -60,11 +60,17 @@
 
 **(2) 多维动态规划**
 
+多维动态规划的状态转移方程比较难推理。事实上，在已经确定 dp 数组的时候，状态转移方程一定要根据前面的 dp 数组元素来推理。
+
 [62. 不同路径 ](https://leetcode.cn/problems/unique-paths/description/?envType=study-plan-v2&envId=top-100-liked)：多维动态规划。
+
+[1143. 最长公共子序列 ](https://leetcode.cn/problems/longest-common-subsequence/description/?envType=study-plan-v2&envId=top-100-liked)：多维动态规划。
 
 [5. 最长回文子串 ](https://leetcode.cn/problems/longest-palindromic-substring/description/?envType=study-plan-v2&envId=top-100-liked)： 多维动态规划。本题枚举子串长度和左边界， 而不是依次枚举左边界和右边界。这个是根据当前问题如何缩减成自问题来判断的。
 
 [64. 最小路径和 ](https://leetcode.cn/problems/minimum-path-sum/submissions/568504855/?envType=study-plan-v2&envId=top-100-liked)：动态规划。这个二维数组 dp 的初始化稍微有点特殊。
+
+[72. 编辑距离 ](https://leetcode.cn/problems/edit-distance/submissions/575145767/?envType=study-plan-v2&envId=top-100-liked)：多维动态规划。该题的关键在于如何初始化，以及如何推理动态转移方程。
 
 
 

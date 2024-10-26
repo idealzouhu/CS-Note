@@ -6,6 +6,8 @@ Postman Runner 的API 请求和 普通的单个 API 请求稍微有点区别。
 
 <font color="red">**在使用批量测试的时候，我们必须使用占位符**</font>。
 
+
+
 ### 创建测试数据
 
 以 GET 请求  `http://localhost:8080/test/{{id}}`  为例， 创建一个包含不同 `id` 值的 JSON 或 CSV 文件。

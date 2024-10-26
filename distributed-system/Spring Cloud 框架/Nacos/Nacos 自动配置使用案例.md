@@ -10,7 +10,7 @@
 docker run ^
 -d -p 8848:8848 ^
 -p 9848:9848 ^
---name nacos-test ^
+--name nacos-test1 ^
 -e MODE=standalone ^
 -e TIME_ZONE='Asia/Shanghai' ^
 nacos/nacos-server:v2.1.2
@@ -25,8 +25,6 @@ docker run ^
 -e TIME_ZONE='Asia/Shanghai' ^
 nacos/nacos-server:v2.4.2
 ```
-
-
 
 部分指令的含义如下：
 
@@ -95,8 +93,6 @@ spring:
 server:
   port: 8080
 ```
-
-
 
 
 

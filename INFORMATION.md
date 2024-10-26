@@ -12,11 +12,19 @@
 
 [JavaGuide ](https://javaguide.cn/open-source-project/)：Java程序员学习的全套教程，包含了 Java、408、Spring 等综合知识。另外。该项目提供了面试指南。
 
+[JavaGuide(Java面试 + 学习指南)](https://javaguide.cn/about-the-author/zhishixingqiu-two-years.html#简历修改)
+
 [小林coding](https://xiaolincoding.com/)：提供图解计算机网络、操作系统、MySQL、Redis
 
 [jackfrued/Python-100-Days: Python - 100天从新手到大师 (github.com)](https://github.com/jackfrued/Python-100-Days)： python 学习的全套教程
 
 [拿个offer - 开源&项目实战 (nageoffer.com)](https://nageoffer.com/)： 提供了不错的实训项目
+
+[CS-Notes仓库(165k)](https://github.com/CyC2018/CS-Notes/blob/master/README.md)
+
+[java生态圈常用技术框架（13.4K）](https://github.com/aalansehaiyang/technology-talk/tree/master)
+
+[尼恩 公众号 二维码在下边（博客园贴码被封） (yuque.com)](https://www.yuque.com/crazymakercircle/gkkw8s/khigna)
 
 
 
@@ -27,6 +35,16 @@
 [《JavaGuide面试指北》](https://pan.baidu.com/s/1oNuC9yAlN-bx7-TLZo7KYg?pwd=4gpn)
 
 [数据结构与算法面试题 | 小林coding (xiaolincoding.com)](https://xiaolincoding.com/interview/data.html#数据结构)
+
+[面试资料(github仓库 8.9k)](https://github.com/wolverinn/Waking-Up)
+
+
+
+### 实践案例
+
+[realpdai/tech-pdai-spring-demos](https://github.com/realpdai/tech-pdai-spring-demos)
+
+[ityouknow/spring-boot-examples](https://github.com/ityouknow/spring-boot-examples)
 
 
 

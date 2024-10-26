@@ -72,9 +72,24 @@ int min = nums[0];
  // 使用 Arrays.stream() 将数组转换为流，然后调用 min() 方法获取最小值（ Optional 对象）
  int min = Arrays.stream(nums).min().getAsInt();
  
- boolean[] used = new boolean[nums.length];
- Arrays.fill(used, false);
  Arrays.sort(nums);
+```
+
+
+
+
+
+数组初始化：
+
+```
+boolean[] used = new boolean[nums.length];
+Arrays.fill(used, false);
+
+boolean[][] dp = new boolean[len][target + 1];
+// 遍历每一行，填充每一行的元素为 false
+for (int i = 0; i < len; i++) {
+    Arrays.fill(dp[i], false);
+}
 ```
 
 
@@ -98,16 +113,21 @@ int[] clonedArray = originalArray.clone();
 
 
 
-将数组转换为列表
+将 `dp` 数组转换为一个固定大小的 `List`
 
 ```
 Integer[] dp;
-Arrays.asLisst(dp);
+Arrays.asList(dp);
 ```
 
 其中，数据类型必须为 包装类型。
 
+将 `dp` 数组转换为一个非固定大小的 `List`
 
+```
+Integer[] dp = {1, 2, 3};
+List<Integer> list = new ArrayList<>(Arrays.asList(dp));
+```
 
 
 
