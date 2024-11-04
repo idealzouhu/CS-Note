@@ -40,6 +40,14 @@
 
 
 
+### 贪心算法
+
+贪心算法的难点在于如何证明一系列的局部最优解能够找到最优解。
+
+[45. 跳跃游戏 II ](https://leetcode.cn/problems/jump-game-ii/description/?envType=study-plan-v2&envId=top-100-liked)：经典贪心算法。可以正向思考，也可以反向思考。
+
+
+
 ### 动态规划
 
 求最值的问题，当前问题可以缩减成子问题
@@ -253,11 +261,17 @@
 
 ### 图论
 
-[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/) ： 该题是[岛屿类问题](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-)中的一类问题，解法主要是如何在图上进行深度优先搜索
-
 [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)：最短路径问题，使用 迪杰斯特拉算法来解决
 
 [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/solutions/124765/fu-lan-de-ju-zi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 在图上进行多源广度优先搜索，实际上多源广度优先搜索可以理解为特殊的单源广度优先搜索。
+
+深度遍历
+
+[547. 省份数量](https://leetcode.cn/problems/number-of-provinces/description/)：邻接矩阵 + DFS。
+
+[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/) ： 该题是[岛屿类问题](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-)中的一类问题，解法主要是如何在图上进行深度优先搜索
+
+
 
 
 

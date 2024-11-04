@@ -14,7 +14,13 @@
 
 
 
+
+
+
+
 ### DFS 遍历
+
+在遍历的时候一定要注意终止条件，避免图里面的循环
 
 [200. 岛屿数量 - 力扣（LeetCode）](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)
 

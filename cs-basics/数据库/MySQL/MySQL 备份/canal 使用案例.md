@@ -2,7 +2,7 @@
 
 [QuickStart · alibaba/canal Wiki (github.com)](https://github.com/alibaba/canal/wiki/QuickStart)
 
-### 创建 binlog 配置文件
+### 1.1 创建 binlog 配置文件
 
 在你的主机上创建一个 `my.cnf` 文件，并添加需要的配置。
 
@@ -17,7 +17,7 @@ server_id=1 # 配置 MySQL replaction 需要定义，不要和 canal 的 slaveId
 
 
 
-### 启动 mysql 服务器
+### 1.2 启动 mysql 服务器
 
 ```bash
 docker run --name mysql-canal ^
@@ -29,7 +29,7 @@ docker run --name mysql-canal ^
 
 
 
-### 修改配置文件权限
+### 1.3 修改配置文件权限
 
 在启动mysql 容器的时候，MySQL 会警告配置文件 `/etc/mysql/my.cnf` 权限设置不当，允许所有用户写入（world-writable）。<font color="red">**由于安全原因，MySQL 会忽略这个配置文件**</font>。
 
@@ -39,13 +39,13 @@ docker run --name mysql-canal ^
 
 因此，修改文件权限，确保只有合适的用户有写入权限。
 
-```
+```bash
 chmod 644 /etc/mysql/my.cnf
 ```
 
 
 
-### 创建账户并授权
+### 1.4 创建账户并授权
 
 进入 mysql  容器。
 
@@ -68,9 +68,9 @@ FLUSH PRIVILEGES;
 
 
 
-### 检测 binlog 配置
+### 1.5 检测 binlog 配置是否成功
 
-利用 `show variables like 'log_bin';` 查看是否打开binlog模式：
+进入 MySQL， 利用  `show variables like 'log_bin';`  查看是否打开 binlog 模式：
 
 ```bash
 mysql> show variables like 'log_bin';
@@ -87,7 +87,7 @@ mysql> show variables like 'log_bin';
 
 ## 二、RocketMQ 安装及配置
 
-### 利用 docker-cimpose 部署 RocketMQ
+### 利用 docker-compose 部署 RocketMQ
 
 为了快速启动并运行 RockerMQ 集群，创建 `docker-compose.yml` 文件。
 
@@ -204,7 +204,7 @@ $ sh mqadmin updatetopic -t TestTopic -c DefaultCluster
 
 
 
-### 2.2 配置修改参数
+### 2.2 修改配置参数
 
 修改 instance 配置文件  ``conf/example/instance.properties``
 
