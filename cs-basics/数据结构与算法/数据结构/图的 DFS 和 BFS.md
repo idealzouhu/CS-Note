@@ -1,4 +1,4 @@
-## 联通图的遍历
+## 一、联通图的遍历
 
 **深度优先搜索（DFS）** 和 **广度优先搜索（BFS）** 都适用于遍历连通图。在连通图中，这两种遍历算法可以从任意一个顶点开始，遍历完所有的顶点，且不会遗漏任何一个顶点。
 
@@ -6,7 +6,7 @@
 
 
 
-## 非联通图的遍历
+## 二、非联通图的遍历
 
 在非连通图中，如果你使用 **DFS** 或 **BFS** 从某个顶点开始遍历，你只能遍历到与该顶点相连的顶点，即同一个连通分量中的所有顶点。但是，其他不相连的顶点（属于不同连通分量的顶点）是无法被遍历到的。
 
@@ -16,11 +16,39 @@
 
 
 
+### 2.1 DFS 遍历 + 邻接矩阵
+
+#### 2.1.1 模板
+
+```java
+public void dfs(char[][] grid, int x, int y, boolean[][] visited) {
+    // 辅助方向数组，用于上下左右移动
+    int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    int rows = grid.length;
+    int cols = grid[0].length;
+
+    // 访问当前节点
+    visited[x][y] = true;
+
+    // 遍历四个方向的邻居
+    for (int[] direction : directions) {
+        int newX = x + direction[0];
+        int newY = y + direction[1];
+
+        // 检查新位置是否在有效范围内且未访问过
+        if (newX >= 0 && newX < rows && newY >= 0 && newY < cols && !visited[newX][newY] && grid[newX][newY] == '.') {
+            // 递归访问邻居节点
+            dfs(grid, newX, newY, visited);
+        }
+    }
+}
+```
 
 
-### DFS 遍历
 
-在遍历的时候一定要注意终止条件，避免图里面的循环
+#### 2.1.2 应用案例
+
+在遍历的时候一定要注意终止条件，避免图里面的循环。
 
 [200. 岛屿数量 - 力扣（LeetCode）](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)
 
@@ -83,17 +111,80 @@ boolean inArea(int[][] grid, int r, int c) {
 
 
 
-### BFS 遍历
+### 2.2 BFS 遍历
 
-BFS 通常用于求**最短路径问题**。
+#### 2.2.1 模板
 
-[994. 腐烂的橘子 - 力扣（LeetCode）](https://leetcode.cn/problems/rotting-oranges/solutions/129542/yan-du-you-xian-sou-suo-python3-c-by-z1m/?envType=study-plan-v2&envId=top-100-liked)
+在 BFS 遍历的 `for` 循环里，通常我们会在循环的内部标记当前节点为已访问
+
+- **避免重复访问**：如果不在 `for` 循环内标记节点为已访问，当前层级的其他节点也可能把该节点再次加入队列，导致重复访问。
+- **避免错误的路径判断**：BFS 是逐层扩展的算法，每一层级代表着离起始点的距离。通过在 `for` 循环内标记节点为已访问，可以确保该节点只会被从距离它最近的路径访问到。如果放到循环外，有可能会导致一些路径在未访问标记的情况下重复进入队列，从而干扰最终的路径长度判断。
+
+```java
+public void bfs(char[][] grid, int startX, int startY) {
+    // 辅助方向数组，用于上下左右移动
+    int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    int rows = grid.length;
+    int cols = grid[0].length;
+    boolean[][] visited = new boolean[rows][cols];
+    Queue<int[]> queue = new LinkedList<>();
+
+    // 初始化：将起始节点加入队列并标记为已访问
+    queue.offer(new int[]{startX, startY});
+    visited[startX][startY] = true;
+
+    while (!queue.isEmpty()) {
+        int[] node = queue.poll();
+        int x = node[0], y = node[1];
+
+        // 对四个方向的邻居进行遍历
+        for (int[] direction : directions) {
+            int newX = x + direction[0];
+            int newY = y + direction[1];
+
+            // 检查新位置是否在有效范围内且未访问过
+            if (newX >= 0 && newX < rows && newY >= 0 && newY < cols && !visited[newX][newY] && grid[newX][newY] == '.') {
+                // 标记为已访问并将该节点加入队列
+                visited[newX][newY] = true;
+                queue.offer(new int[]{newX, newY});
+            }
+        }
+    }
+}
+```
 
 
 
 
 
-## DFS 遍历和 BFS 遍历的区别
+#### 实际应用
 
-DFS 遍历无法求出最短路径，而 DFS 遍历可以求出最短路径。
+[1926. 迷宫中离入口最近的出口 - 力扣（LeetCode）](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/?envType=study-plan-v2&envId=graph-theory)
 
+
+
+
+
+## 三、DFS 遍历和 BFS 遍历的区别
+
+### 3.1 应用场景
+
+DFS 遍历无法求出最短路径，而 BFS 遍历可以求出最短路径。
+
+
+
+
+
+## 四、Leetcode 刷题
+
+[743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)：最短路径问题，使用 迪杰斯特拉算法来解决
+
+[994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/solutions/124765/fu-lan-de-ju-zi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)： 多源BFS。在图上进行多源广度优先搜索，实际上多源广度优先搜索可以理解为特殊的单源广度优先搜索。
+
+深度遍历
+
+[547. 省份数量](https://leetcode.cn/problems/number-of-provinces/description/)：邻接矩阵 + DFS。
+
+[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/) ： 该题是[岛屿类问题](https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-)中的一类问题，解法主要是如何在图上进行深度优先搜索
+
+[1926. 迷宫中离入口最近的出口 ](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/description/?envType=study-plan-v2&envId=graph-theory)：邻接矩阵 + BFS。

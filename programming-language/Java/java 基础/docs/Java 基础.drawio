@@ -1,0 +1,43 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Java 软件组件" id="reZCzWWeIb240zytc-IV">
+    <mxGraphModel dx="1195" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4MQWWMKK0baR1Debwt09-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="210" width="670" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-13" value="&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff421c&quot; style=&quot;font-size: 20px;&quot;&gt;JDK&lt;/font&gt;&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-19" value="" style="group;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="110" y="270" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fillStyle=auto;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-19">
+          <mxGeometry width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;JVM&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=31;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-19">
+          <mxGeometry x="25" y="65" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-3" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Java Class Library&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=31;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-19">
+          <mxGeometry x="22.5" y="140" width="165" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-7" value="&lt;font color=&quot;#ff5338&quot; size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;JRE&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-19">
+          <mxGeometry x="70" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-21" value="" style="group;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="370" y="270" width="350" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fillStyle=auto;container=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-21">
+          <mxGeometry x="-15" width="350" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-9" value="&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff5517&quot; style=&quot;font-size: 20px;&quot;&gt;Java Development Tools&lt;/font&gt;&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-21">
+          <mxGeometry x="45" y="10" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4MQWWMKK0baR1Debwt09-16" value="&lt;p style=&quot;line-height: 140%;&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;font-size: 16px;&quot;&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;javac&lt;/b&gt; - Java Compiler&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;java&lt;/b&gt; - Java Application Launcher&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;javadoc&lt;/b&gt; - Java Documentation Generator&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;jdb&lt;/b&gt; - Java Debugger&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;jar&lt;/b&gt; - Java Archive Tool&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;javap&lt;/b&gt; - Java Class File Disassembler&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;jmap &lt;/b&gt;- Java Memory Map Tool&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;jhat&lt;/b&gt; - Java Heap Analysis Tool&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="4MQWWMKK0baR1Debwt09-21">
+          <mxGeometry x="-15" y="40" width="320" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

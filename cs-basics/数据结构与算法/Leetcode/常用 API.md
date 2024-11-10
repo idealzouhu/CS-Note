@@ -303,7 +303,7 @@ return new ArrayList<List<String>>(map.values());
 
 
 
-
+`int[]` 只是一个数组类型，**数组类型本身是一个引用类型**。尽管数组包含基本数据类型，但在 Java 中，数组被视为对象（引用类型）。
 
 ```
  // List 里面的元素可以是 数组
