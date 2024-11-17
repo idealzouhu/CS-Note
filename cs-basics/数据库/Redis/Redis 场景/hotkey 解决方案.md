@@ -37,12 +37,6 @@ hotkey 指访问频率明显高于其他 key 的 key。Hotkey  通常会导致�
 
 
 
-
-
-
-
-
-
 ### 参考资料
 
 [Redis常见面试题总结(下) | JavaGuide](https://javaguide.cn/database/redis/redis-questions-02.html#redis-bigkey-大-key)

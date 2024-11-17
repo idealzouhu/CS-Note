@@ -12,10 +12,6 @@
 
 
 
-
-
-
-
 ### Redis 进阶
 
 [持久化机制](./持久化机制.md)： Redis主要包括 RDB 持久化和 AOF 持久化这两种持久化方式
@@ -28,8 +24,6 @@
 
 
 
-
-
-### 细节补充
+### 客户端工具
 
  Redis 可视化桌面终端软件：[Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager/releases)

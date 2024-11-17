@@ -16,6 +16,8 @@
 
 [小林coding](https://xiaolincoding.com/)：提供图解计算机网络、操作系统、MySQL、Redis
 
+[rbmonster/learning-note: Java开发及面试（个人面试、工作总结、资料收集站）](https://github.com/rbmonster/learning-note?tab=readme-ov-file)：场景设计这块感觉挺不错。
+
 [jackfrued/Python-100-Days: Python - 100天从新手到大师 (github.com)](https://github.com/jackfrued/Python-100-Days)： python 学习的全套教程
 
 [拿个offer - 开源&项目实战 (nageoffer.com)](https://nageoffer.com/)： 提供了不错的实训项目

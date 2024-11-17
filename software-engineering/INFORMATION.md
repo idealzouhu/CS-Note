@@ -7,11 +7,17 @@
 
 
 
-### 
-
 ### 场景题
 
+[软件架构场景实战22讲_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1jA411k7eG/?p=2&spm_id_from=pageDriver&vd_source=52cd9a9deff2e511c87ff028e3bb01d2)
+
 [场景题：二维码扫码登录设计_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1cz421z7hn/?spm_id_from=333.1007.tianma.61-4-242.click&vd_source=52cd9a9deff2e511c87ff028e3bb01d2)
+
+
+
+### 设计案例
+
+[rbmonster/learning-note: Java开发及面试（个人面试、工作总结、资料收集站）](https://github.com/rbmonster/learning-note?tab=readme-ov-file)
 
 
 

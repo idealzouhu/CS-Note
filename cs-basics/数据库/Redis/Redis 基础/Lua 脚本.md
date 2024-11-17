@@ -61,7 +61,7 @@ return result != null && Objects.equals(result, 0L);
 
 
 
-### Lua 脚本实践案例
+### 2.2 Lua 脚本实践案例
 
 当你在 Redis 中执行 Lua 脚本时，可以通过 `EVAL` 命令来调用脚本，并且需要明确地传递 `KEYS` 和 `ARGV` 参数。比如：
 
