@@ -83,3 +83,13 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 ### LinkedHashSet 类简介
 
 LinkedHashSet 不仅保证元素的唯一性，还**保持元素的插入顺序**。
+
+
+
+
+
+
+
+### TreeSet 类
+
+`TreeSet` 是 Java 集合框架中的一个类，它基于 **红黑树** 数据结构实现，用来存储 **无重复的有序集合**。它继承自 `AbstractSet`，并实现了 `NavigableSet` 和 `SortedSet` 接口，适用于需要 **自动排序** 和 **快速查找** 的场景。

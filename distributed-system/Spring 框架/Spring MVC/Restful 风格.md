@@ -1,4 +1,20 @@
-# Restful 控制器
+
+
+### Restful 的关键特性
+
+**无状态（Stateless）**：每个请求都是独立的，客户端和服务器之间的每个请求都包含所有需要的信息，以便服务器处理请求。服务器不需要记住前一个请求的任何状态。
+
+**统一接口**：通过统一的接口（如 HTTP）访问资源，简化了系统架构。
+
+
+
+
+
+
+
+
+
+### Restful 控制器
 
 Restful API 与 网站两者都涉及对 HTTP 请求的响应，关键区别在于响应内容的不同，即
 
@@ -17,3 +33,15 @@ Restful API 与 网站两者都涉及对 HTTP 请求的响应，关键区别在�
 | @PatchMapping   | HTTP PATCH 请求  | 更新资源     |
 | @DeleteMapping  | HTTP DELETE 请求 | 删除资源     |
 | @RequestMapping | 通用请求处理     |              |
+
+
+
+
+
+
+
+[手摸手之掌握架构师的编程规范 (yuque.com)](https://www.yuque.com/magestack/12306/bmatdhq46cegg2xe#QuBzK)
+
+
+
+**不用使用动词定义 URL**

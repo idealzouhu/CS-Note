@@ -15,7 +15,7 @@ public class PriorityQueue<E> extends AbstractQueue<E>
 
 ### 底层数据结构
 
-在 PriorityQueue 里面，**数组 `queue` 用于存储堆中的元素**，使用平衡二叉堆（Balanced Binary Heap）来实现。具体细节如下：
+在 `PriorityQueue` 里面，**数组 `queue` 用于存储堆中的元素**，使用平衡二叉堆（Balanced Binary Heap）来实现。具体细节如下：
 
 数组表示堆：
 

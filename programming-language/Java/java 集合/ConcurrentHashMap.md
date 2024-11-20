@@ -10,7 +10,7 @@
 
 ConcurrentHashMap 采用分段锁（segment） 机制。
 
-`ConcurrentHashMap` 的内部结构的层次关系为 ConcurrentHashMap→Segment→HashEntry。这样 设计的好处在于，每次访问的时候只需要将一个 `Segment` 锁定，而不需要将整个 Map 类型集合都进 行锁定。
+`ConcurrentHashMap` 的内部结构的层次关系为 ConcurrentHashMap→Segment→HashEntry。这样 设计的好处在于，每次访问的时候只需要将一个 `Segment` 锁定，而不需要将整个 Map 类型集合都进行锁定。
 
 <img src="images/image-20240828192953841.png" alt="image-20240828192953841" style="zoom:80%;" />
 
@@ -18,7 +18,7 @@ ConcurrentHashMap 采用分段锁（segment） 机制。
 
 ## 三、ConcurrentHashMap( 最新版本)
 
-### 底层数据结构
+### 3.1 底层数据结构
 
 在 JDK 17， 数据结构为 <font color="red">**数组 + 链表 / 红黑树**</font>。其中，
 

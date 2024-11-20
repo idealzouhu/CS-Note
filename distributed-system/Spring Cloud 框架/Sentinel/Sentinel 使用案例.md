@@ -1,7 +1,5 @@
 [TOC]
 
-[TOC]
-
 > 完整案例代码：[java-demos/spring-cloud-sentinel at main · idealzouhu/java-demos (github.com)](https://github.com/idealzouhu/java-demos/tree/main/spring-cloud-sentinel)
 
 ## 一、Sentinel 使用

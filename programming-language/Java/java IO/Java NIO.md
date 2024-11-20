@@ -6,6 +6,8 @@ NIO 主要包括以下三个核心组件：
 
 
 
+![Buffer、Channel和Selector三者之间的关系](images/channel-buffer-selector.png)
+
 
 
 

@@ -106,3 +106,21 @@ SELECT SUM(course_nums) AS staff_nums
 FROM COURSENUMS;
 ```
 
+
+
+
+
+
+
+[查询培训指定课程的员工信息_牛客题霸_牛客网](https://www.nowcoder.com/practice/a0ef4574056e4a219ee7d651ba82efef?tpId=375&tqId=10858427&ru=/exam/company&qru=/ta/sql-big-write/question-ranking&sourceUrl=%2Fexam%2Fcompany)
+
+模式匹配
+
+```sql
+SELECT st.staff_id, staff_name
+FROM staff_tb AS st
+INNER JOIN cultivate_tb AS ct
+ON  st.staff_id = ct.staff_id
+WHERE course LIKE '%course3%';
+```
+
