@@ -1,9 +1,3 @@
-### Spring 框架
-
-[Spring 框架](Spring 框架) ： Spring 框架全家桶。
-
-
-
 ### 分布式
 
 [分布式理论](分布式理论) ：分布式基础理论
@@ -21,6 +15,4 @@
 ### 参考资料
 
 [《深入理解分布式系统  唐伟志》 ](https://pan.baidu.com/s/1AI3R0kA-5HF29svXXLWwTw)
-
-[spring-boot-examples（github29.1k）](https://github.com/ityouknow/spring-boot-examples/tree/master)
 
