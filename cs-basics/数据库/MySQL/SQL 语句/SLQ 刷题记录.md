@@ -52,6 +52,8 @@ ORDER BY time
 
 SQL 题目经常要使用日期相关函数。
 
+`DATEDIFF(checkout_time, checkin_time)`  求两个日期之间相隔的天数。
+
 ```
 SELECT user_id, ct.room_id, room_type, DATEDIFF(checkout_time, checkin_time) AS days
 FROM guestroom_tb AS gt
@@ -122,5 +124,80 @@ FROM staff_tb AS st
 INNER JOIN cultivate_tb AS ct
 ON  st.staff_id = ct.staff_id
 WHERE course LIKE '%course3%';
+```
+
+
+
+
+
+[推荐内容准确的用户平均评分_牛客题霸_牛客网](https://www.nowcoder.com/practice/2dcac73b647247f0aef0b261ed76b47e?tpId=375&tqId=10858428&ru=/exam/oj&qru=/ta/sql-big-write/question-ranking&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page)
+
+去重
+
+```
+WITH RecTrue AS(
+    SELECT DISTINCT user_id, score
+    FROM recommend_tb AS rt
+    INNER JOIN user_action_tb AS ua
+    ON rt.rec_user = ua.user_id AND rt.rec_info_l = ua.hobby_l
+)
+SELECT AVG(score) AS avg_score
+FROM RecTrue;
+```
+
+
+
+
+
+[统计各岗位员工平均工作时长_牛客题霸_牛客网](https://www.nowcoder.com/practice/b7220791a95a4cd092801069aefa1cae?tpId=375&tqId=2452517&ru=/exam/oj&qru=/ta/sql-big-write/question-ranking&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page)
+
+`TIMESTAMPDIFF(MINUTE, first_clockin, last_clockin) / 60.0`： 统计员工工作时长（以小时为单位）。为了确保统计时长准确，可以通过计算分钟差再转换为小时，这样能够将多余的分钟部分纳入统计结果。
+
+这是因为 `TIMESTAMPDIFF(HOUR, first_clockin, last_clockin)`  只会计算整小时的差值，忽略多余的分钟差。例如，`08:30` 到 `10:45` 的差值会被计算为 `2` 小时，而忽略了额外的 `15` 分钟。
+
+```sql
+WITH StaffHour AS(
+    SELECT st.staff_id, post, TIMESTAMPDIFF(MINUTE, first_clockin, last_clockin) / 60.0 AS hours
+    FROM staff_tb AS st
+    INNER JOIN attendent_tb AS at
+    ON st.staff_id = at.staff_id
+)
+SELECT post, AVG(hours) AS work_hours
+FROM StaffHour
+GROUP BY post
+ORDER BY work_hours DESC;
+```
+
+
+
+[查找入职员工时间升序排名的情况下的倒数第三的员工所有信息_牛客题霸_牛客网](https://www.nowcoder.com/practice/ec1ca44c62c14ceb990c3c40def1ec6c?tpId=82&tqId=29754&rp=1&ru=/exam/oj&qru=/exam/oj&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=)
+
+区分 DENSE_RANK() 和 RANK()  这两个函数的区别。
+
+```
+WITH RowNum AS(
+    SELECT emp_no, birth_date, first_name, last_name, gender, hire_date,
+        DENSE_RANK() OVER (ORDER BY hire_date DESC) AS row_num
+    FROM employees
+)
+SELECT emp_no, birth_date, first_name, last_name, gender, hire_date
+FROM RowNum
+WHERE row_num = 3
+ORDER BY emp_no;
+```
+
+
+
+
+
+[查找薪水记录超过15条的员工号emp_no以及其对应的记录次_牛客题霸_牛客网](https://www.nowcoder.com/practice/6d4a4cff1d58495182f536c548fee1ae?tpId=82&tqId=29759&rp=1&ru=/exam/oj&qru=/exam/oj&sourceUrl=%2Fexam%2Foj&difficulty=undefined&judgeStatus=undefined&tags=&title=)
+
+聚合函数可以在 HAVING 语句中使用。
+
+```
+SELECT emp_no, COUNT(*) AS t
+FROM salaries
+GROUP BY emp_no
+HAVING COUNT(*) >= 15;
 ```
 

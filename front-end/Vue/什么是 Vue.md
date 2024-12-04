@@ -13,6 +13,24 @@ Vue 的两个核心功能：
 - **声明式渲染**：Vue 基于标准 HTML 拓展了一套模板语法，使得我们可以声明式地描述最终输出的 HTML 和 JavaScript 状态之间的关系。
 - **响应性**：Vue 会自动跟踪 JavaScript 状态并在其发生变化时响应式地更新 DOM。
 
+#### 1.2.1 声明式渲染
+
+声明式渲染是 Vue.js 的核心特性之一，它意味着开发者只需要专注于描述**最终的 UI 状态**，而<font color="red">**无需手动操作 DOM 来实现视图的更新和管理**</font>。
+
+命令式渲染需要开发者显式地操作 DOM 元素，例如使用 `document.querySelector`、`innerHTML` 等来更新页面内容。
+
+#### 1.2.2 响应性
+
+**响应性**是指数据状态的变化会**自动触发视图更新**的机制。Vue 会追踪应用中依赖的数据，当这些数据发生变化时，它会高效地更新与之关联的 DOM，使得数据与视图之间保持同步。
+
+
+
+
+
+### 1.3 
+
+
+
 
 
 ## 二、Vue 架构
@@ -40,6 +58,10 @@ F --> G(渲染)
 G --> H(真实DOM)
 ```
 
+在底层机制中，Vue 会将[模板](https://cn.vuejs.org/guide/essentials/template-syntax.html)编译成高度优化的 JavaScript 代码。结合响应式系统，当应用状态变更时，Vue 能够智能地推导出需要重新渲染的组件的最少数量，并应用最少的 DOM 操作。
+
+
+
 
 
 
@@ -63,13 +85,13 @@ G --> H(真实DOM)
 
 
 
-### 3.1 操作繁琐
+### 3.1 避免操作繁琐
 
-（1）JavaScript
+（1）JavaScript 代码
 
 当没有使用像 Vue 这样的框架时，通过原生 JavaScript 进行 DOM 操作可能会显得比较繁琐和复杂。以下是一个简单的例子，展示如何使用原生 JavaScript 来创建一个简单的列表，并在用户点击按钮时向列表中添加新的项目：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,9 +133,11 @@ G --> H(真实DOM)
 
 
 
+（2）Vue 简化后的代码
 
+`<div id="app"> `是 Vue 应用的挂载点，Vue 实例将控制这个元素及其子元素。
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -153,7 +177,6 @@ G --> H(真实DOM)
   </script>
 </body>
 </html>
-
 ```
 
 

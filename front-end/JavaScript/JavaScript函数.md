@@ -6,11 +6,17 @@
 
 
 
-### 命名导出 (Named Exports) 和默认导出 (Default Exports)
+### ES6 模块导入
+
+ES6 模块支持两种主要导出方式：**命名导出 (Named Exports)** 和 **默认导出 (Default Exports)**。
 
 #### 命名导出 (Named Exports)
 
 命名导出允许一个模块导出多个绑定，并且在导入时可以选择性地导入其中的某些绑定。导入时需要使用花括号 `{}` 来包裹要导入的名字。
+
+
+
+
 
 
 

@@ -8,6 +8,27 @@
 
 
 
+### 聚合函数和窗口函数冲突
+
+在同一层次的 `SELECT` 列表中使用了聚合函数和窗口函数，并且**试图对聚合结果再次进行窗口计算**，这种操作是不允许的。
+
+[每个商品的销售总额_牛客题霸_牛客网](https://www.nowcoder.com/practice/6d796e885ee44a9cb599f47b16a02ea4?tpId=375&tqId=10824294&ru=/exam/oj&qru=/ta/sql-big-write/question-ranking&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page)
+
+```sql
+SELECT name AS product_name, 
+    SUM(quantity) AS total_sales,
+    RANK() OVER (PARTITION BY category ORDER BY total_sales DESC) AS category_rank
+FROM products
+INNER JOIN orders 
+ON  products.product_id = orders.product_id
+GROUP BY name, category
+ORDER BY category, total_sales DESC
+```
+
+
+
+
+
 ### 执行顺序
 
 报错 `SQL_ERROR_INFO: "Unknown column 'days' in 'where clause'"`

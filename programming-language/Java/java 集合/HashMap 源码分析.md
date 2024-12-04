@@ -11,7 +11,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
 HaahMap 的特点有：
 
-- **每个键在 `HashMap` 中是唯一的**。如果插入了具有相同哈希值的键，后插入的键值对会覆盖先插入的键值对。
+- <font color="red">**每个键在 `HashMap` 中是唯一的**</font>。如果插入了具有相同哈希值的键，后插入的键值对会覆盖先插入的键值对。
 - `HashMap` 使用哈希表作为底层数据结构，键通过哈希函数计算出哈希值，并存储在相应的桶中。
 
 

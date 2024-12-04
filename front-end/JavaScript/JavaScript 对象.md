@@ -37,6 +37,8 @@ console.log(person['age']); // 输出: 30
 person.greet(); // 输出: Hello, John
 ```
 
+
+
 #### 修改属性
 
 你可以随时修改对象的属性：
@@ -45,6 +47,8 @@ person.greet(); // 输出: Hello, John
 person.name = 'Jane';
 console.log(person.name); // 输出: Jane
 ```
+
+
 
 #### 添加属性和方法
 

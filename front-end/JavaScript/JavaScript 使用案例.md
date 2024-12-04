@@ -1,14 +1,12 @@
 [TOC]
 
-
-
 ##  一、JavaScript 脚本添加方式
 
-在 HTML 文件中使用 JavaScript 代码主要由以下三种方法：
+在 HTML 文件中使用 JavaScript 代码主要有以下三种方式：
 
-- 内联
-- 内嵌
-- 外部引用
+- **内联 JavaScript**：适用于简单、快速的事件处理，代码直接绑定在 HTML 元素上，但不适合复杂或大量的 JavaScript 逻辑。
+- **内嵌 JavaScript**：适用于代码量适中的情况，能够将 JavaScript 和 HTML 放在同一个文件中，便于快速开发。
+- **外部引用 JavaScript**：适合于大型项目，能够提高代码的复用性和维护性，同时支持浏览器缓存，性能更优。
 
 
 
@@ -139,3 +137,88 @@
   ```
 
   
+
+
+
+## 三、 JavaScript 脚本使用案例
+
+### 3.1 编写代码
+
+创建 `hello.html` 文件，具体内容如下：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JavaScript Example</title>
+
+    <style>
+        /* 设置页面背景颜色 */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 设置标题的样式 */
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* 设置按钮的样式 */
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* 设置按钮的 hover 效果 */
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="message">Hello, World!</h1>  <!-- 显示初始文本 -->
+    <button id="changeTextButton">Change Text</button>  <!-- 按钮 -->
+
+    <script>
+        // 获取按钮和文本元素
+        const button = document.getElementById('changeTextButton');
+        const message = document.getElementById('message');
+
+        // 为按钮添加点击事件监听器
+        button.addEventListener('click', function() {
+            // 修改文本内容
+            message.textContent = 'You clicked the button!';
+        });
+    </script>
+
+</body>
+</html>
+```
+
+
+
+### 3.2 测试运行效果
+
+页面加载时，标题显示 `Hello, World!`。用户点击按钮后，标题文本会变为 `You clicked the button!`。
+
+![image-20241127162235400](images/image-20241127162235400.png)
+
+
+
+### 参考资料
+
+[什么是 JavaScript？ - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/What_is_JavaScript)

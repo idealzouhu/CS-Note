@@ -23,11 +23,32 @@ MVCC 通过创建数据的多个版本和使用快照读取来实现并发控制
 
 **MVCC（多版本并发控制）通过 ReadView + undo log 来实现**
 
-- Read View 有四个重要的字段
+Read View 有四个重要的字段
 
-* 聚簇索引记录中的两个隐藏列，分别指向事务Id和指向undo log 的日志
+- **`min_trx_id`**：指示视图中能看到的最小事务 ID。
+- **`max_trx_id`**：指示视图中能看到的最大事务 ID。
+- **`m_ids`**：存储当前视图中所有活跃事务的事务 ID，用于确定哪些事务修改的数据对当前事务不可见。
+- **`creator_trx_id `**：创建该 Read View 的事务的事务 id。
+> 注意，MySQL InnoDB 存储引擎中的事务 ID (`trx_id`) 是按照递增的顺序分配的
 
 
+![img](images/ReadView.drawio.png)
+
+
+
+某些情况下，<font color="red">**可能会出现 `min_trx_id <= 某个事务 trx_id < min_trx_id`，而该事务的 `trx_id` 不在 `m_ids` 中**</font>，这表明该事务已经提交。
+
+
+
+### 聚簇索引
+
+聚簇索引记录中的两个隐藏列，分别指向事务Id 和指向undo log 的日志
+
+
+
+
+
+### 判断是否可见的流程
 
 **可重复读隔离级别是**启动事务时生成一个 Read View，然后整个事务期间都在用这个 Read View
 
@@ -39,7 +60,17 @@ MVCC 会在启动事务时生成一个 Read View，然后整个事务期间都�
 
 当某个事务修改数据时，系统会将这次修改与该事务关联，直到该事务提交。修改后，数据的版本链会更新，新版本的记录会标记为当前有效的版本。
 
-![image-20241115230436709](images/image-20241115230436709.png)
+
+
+当 min_trx_id <= 记录的 trx_id < min_trx_id 时，如果记录的 trx_id 不在 m_ids 里面，生成该版本记录的活跃事务已经被提交。
+
+
+
+![image-20241203203320576](images/image-20241203203320576.png)
+
+
+
+
 
 
 
