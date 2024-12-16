@@ -197,6 +197,14 @@ String key = new String(array);
 
 
 
+String 切割
+
+```
+String s = "abcdbcd";
+String[] arr = s.split("b");  // 分割字符串 "abcdbcd" 使用字符 'b' 为分隔符
+String[] arr = s.split("bc");  // 使用 "bc" 作为分隔符
+```
+
 
 
 ```
@@ -206,6 +214,15 @@ String key = new String(array);
   int result = Integer.parseInt(number);
   // 返回基本类型 Integer
   Integer result2 = Integer.valueOf(number);
+```
+
+
+
+常见的错误:
+
+```
+# 不合法.String 类是不可变类，这意味着你无法直接修改字符串中的字符。
+s.charAt(i)  = ‘b’
 ```
 
 
@@ -293,13 +310,29 @@ ArrayList 构造方法如何处理数组
 
 构造方法
 
-```
+```java
 Map<String, List<String>> map = new HashMap<>();
 
 ....
 
 return new ArrayList<List<String>>(map.values());
 ```
+
+
+
+```java
+// 参数 a 会作为 ArrayList 的初始化数据来源， a 必须是一个实现了 Collection 接口的集合对象
+List<String> list = new ArrayList<>(a);
+
+// 例如
+List<Integer> a = Arrays.asList(1, 2, 3);
+ArrayList<Integer> list = new ArrayList<>(a);
+System.out.println(list); // 输出：[1, 2, 3]
+```
+
+
+
+
 
 
 

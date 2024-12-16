@@ -257,6 +257,27 @@ group by university
 
 
 
+
+
+[查找所有员工的last_name和first_name以及对_牛客题霸_牛客网](https://www.nowcoder.com/practice/5a7975fabe1146329cee4f670c27ad55?tpId=82&tqId=29771&rp=1&ru=/exam/oj&qru=/exam/oj&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=)
+
+一次性查询多个表，通常中间的表包含两外两个表的外键
+
+使用 LEFT JOIN
+
+```sql
+SELECT e.last_name, e.first_name, dp.dept_name
+FROM employees AS e
+LEFT JOIN dept_emp AS de
+ON e.emp_no = de.emp_no
+LEFT JOIN departments AS dp
+ON dp.dept_no = de.dept_no
+```
+
+
+
+
+
 #### **多表查询-组合查询（Union 查询）**
 
 union all 可以保证结果不去重 [查找山东大学或者性别为男生的信息_牛客题霸_牛客网](https://www.nowcoder.com/practice/979b1a5a16d44afaba5191b22152f64a?tpId=199&tqId=1975677&ru=/exam/company&qru=/ta/sql-quick-study/question-ranking&sourceUrl=%2Fexam%2Fcompany)

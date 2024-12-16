@@ -49,3 +49,19 @@ public class Main {
 String[] input = sc.nextline().split(",");
 ```
 
+
+
+
+
+
+
+
+
+遇到的问题
+
+nextInt()
+
+
+
+在读取下一行的数据之前，必须再读取 nextLine()
+

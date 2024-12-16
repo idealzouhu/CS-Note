@@ -1,12 +1,9 @@
-## Spring MVC 的核心组件
+### Spring MVC 的核心组件
 
-DispatcherServlet 是前端控制器设计模式的实现，提供 Spring Web MVC 的集中访问点，而且负责职责的分派，而且与Spring IoC 容器无缝集成，从而可以获得 Spring 的所有好处
-
-
-
-**`Handler`** 是处理 HTTP 请求的具体对象或方法， 即所熟悉的 Controller。
-
-**`HandlerAdapter`** 是调用 `Handler` 的适配器，它根据 `Handler` 的类型来选择合适的调用方式。
+- **`DispatcherServlet`**  是前端控制器设计模式的实现，提供 Spring Web MVC 的集中访问点，而且负责职责的分派，而且与Spring IoC 容器无缝集成，从而可以获得 Spring 的所有好处
+- **`HandlerMapping`**：用于将 HTTP 请求映射到具体的 `Handler`
+- **`Handler`** 是处理 HTTP 请求的具体对象或方法， 即所熟悉的 Controller。
+- **`HandlerAdapter`** 是调用 `Handler` 的适配器，它根据 `Handler` 的类型来选择合适的调用方式。
 
 
 

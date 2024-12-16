@@ -20,20 +20,20 @@
 
 Bean 的作用域定义了 Bean 的生命周期和可见性。
 
-| Scope                                                        | Description                                                  |
+- Spring 中的 Bean 默认都是单例的。
+- 无状态的 Bean 的使用 `singleton`,  而有状态的 Bean 使用 `prototype`。注意：有状态单例 Bean 存在线程安全问题。
+- 作用域可以用 `@scope` 注解来设置。
+
+不同作用域的含义如下：
+
+| 作用域                                                       | 描述                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| [singleton](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-singleton) | (**Default**) Scopes a single bean definition to a single object instance for each Spring IoC container. |
-| [prototype](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-prototype) | Scopes a single bean definition to any number of object instances. |
-| [request](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-request) | Scopes a single bean definition to the lifecycle of a single HTTP request. That is, each HTTP request has its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring `ApplicationContext`. |
-| [session](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-session) | Scopes a single bean definition to the lifecycle of an HTTP `Session`. Only valid in the context of a web-aware Spring `ApplicationContext`. |
-| [application](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-application) | Scopes a single bean definition to the lifecycle of a `ServletContext`. Only valid in the context of a web-aware Spring `ApplicationContext`. |
-| [websocket](https://docs.spring.io/spring-framework/reference/web/websocket/stomp/scope.html) | Scopes a single bean definition to the lifecycle of a `WebSocket`. Only valid in the context of a web-aware Spring `ApplicationContext`. |
-
-作用域可以用 `@scope` 来设置。
-
-无状态的 Bean 的使用 `singleton`,  而有状态的 Bean 使用 `prototype`。注意：有状态单例 Bean 存在线程安全问题。
-
-Spring 中的 Bean 默认都是单例的。
+| [singleton](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-singleton) | (**默认**) 将单个 Bean 定义作用域限定为每个 Spring IoC 容器中的一个对象实例。 |
+| [prototype](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-prototype) | 将单个 Bean 定义作用域限定为多个对象实例。                   |
+| [request](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-request) | 将单个 Bean 定义作用域限定为一个 HTTP 请求的生命周期。即，每个 HTTP 请求都有基于同一个 Bean 定义创建的自己的实例。仅在支持 Web 的 Spring `ApplicationContext` 中有效。 |
+| [session](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-session) | 将单个 Bean 定义作用域限定为 HTTP `Session` 的生命周期。仅在支持 Web 的 Spring `ApplicationContext` 中有效。 |
+| [application](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html#beans-factory-scopes-application) | 将单个 Bean 定义作用域限定为 `ServletContext` 的生命周期。仅在支持 Web 的 Spring `ApplicationContext` 中有效。 |
+| [websocket](https://docs.spring.io/spring-framework/reference/web/websocket/stomp/scope.html) | 将单个 Bean 定义作用域限定为 `WebSocket` 的生命周期。仅在支持 Web 的 Spring `ApplicationContext` 中有效。 |
 
 
 

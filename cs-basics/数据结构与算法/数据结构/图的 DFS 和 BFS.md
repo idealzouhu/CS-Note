@@ -342,6 +342,8 @@ for(int i = 0; i < grid.length; i++){
 
 [542. 01 矩阵 ](https://leetcode.cn/problems/01-matrix/description/?envType=study-plan-v2&envId=graph-theory)：多源 BFS 遍历。
 
+[1129. 颜色交替的最短路径](https://leetcode.cn/problems/shortest-path-with-alternating-colors/description/?envType=study-plan-v2&envId=graph-theory): 多源 BFS 遍历 + 多个邻接表。利用虚拟节点将多源 BFS 遍历转换成单源 BFS 遍历。 在 BFS 遍历中，为了满足交替颜色路径的约束，不仅需要存储节点的信息，还需要同时存储路径到达该节点时的颜色（红色或蓝色）。因此，<font color="red">队列中每个状态存储的是 **[节点编号, 边的颜色]** 的组合，而不是仅存储节点编号</font>。
+
 
 
 #### 3.2.2 经验教训

@@ -1,4 +1,4 @@
-# 一、main() 方法
+### 一、main() 方法
 
 Java程序的入口是`main`方法。
 
@@ -6,7 +6,7 @@ Java程序的入口是`main`方法。
 
 这个命令行参数由 JVM 接收用户输入并传给`main`方法：
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
         for (String arg : args) {
@@ -20,7 +20,7 @@ public class Main {
 
 
 
-# 二、命令行参数解析
+### 二、命令行参数解析
 
 如何解析命令行参数需要由程序自己实现。
 

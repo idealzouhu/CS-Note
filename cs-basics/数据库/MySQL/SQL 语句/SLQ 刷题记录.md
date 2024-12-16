@@ -201,3 +201,18 @@ GROUP BY emp_no
 HAVING COUNT(*) >= 15;
 ```
 
+
+
+
+
+[将所有获取奖金的员工当前的薪水增加10%_牛客题霸_牛客网](https://www.nowcoder.com/practice/d3b058dcc94147e09352eb76f93b3274?tpId=82&tqId=29816&rp=1&ru=/exam/oj&qru=/exam/oj&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page&difficulty=undefined&judgeStatus=undefined&tags=&title=)
+
+```sql
+UPDATE salaries
+SET salary = salary * 1.1
+WHERE emp_no IN(
+    SELECT emp_no
+    FROM emp_bonus
+) AND to_date= '9999-01-01';
+```
+

@@ -8,12 +8,12 @@ Spring Boot 其实不是什么新的框架，它默认配置了很多框架的�
 
 
 
-## Spring Boot 在 Spring 的基础上所作的改进
+### Spring Boot 在 Spring 的基础上所作的改进
 
 Spring Boot 是基于 Spring 的项目，其中最重要的核心有：
 
 - 自动化配置：Spring Boot 使用 ”约定大于配置 “ 的思想，根据项目的依赖和环境自动配置应用程序
-- 起步依赖 ：起步依赖帮助你专注于应用程序需要的功能类型，而非提供该功能的具体库和版本。 Spring Boot起步依赖基本都以spring-boot-starter打头，随后是直接代表其功能的名字，比如web、test。
+- 起步依赖 ：起步依赖帮助你专注于应用程序需要的功能类型，而非提供该功能的具体库和版本。 Spring Boot起步依赖基本都以 spring-boot-starter 打头，随后是直接代表其功能的名字，比如 web、test。
 - 命令行界面
 - Actutaor
 

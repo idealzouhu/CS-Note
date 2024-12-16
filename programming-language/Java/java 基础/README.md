@@ -1,10 +1,10 @@
 ### Java 入门
 
-[Java 基础概念.md](Java 基础概念.md) ：
+[Java 基础概念](Java 基础概念.md) 
 
-[JDK 安装教程.md](JDK 安装教程.md) 
+[JDK 安装教程](JDK 安装教程.md) 
 
-[如何使用官方文档.md](如何使用官方文档.md) 
+[如何使用官方文档](如何使用官方文档.md) 
 
 
 
@@ -20,8 +20,6 @@
 
 
 
-
-
 ### 细节补充
 
  [重要考点.md](重要考点.md): 列举重要的考点
@@ -32,8 +30,6 @@
 
 
 
-
-
-## 博客
+### 博客
 
 [Java SPI 机制详解 | JavaGuide](https://javaguide.cn/java/basis/spi.html#serviceloader-具体实现)

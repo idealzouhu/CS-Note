@@ -155,4 +155,6 @@ IO多路复用模型的缺点：本质上，select/epoll系统调用是阻塞式
 
 《极致经典（卷1）：Java高并发核心编程(卷2 加强版)》
 
+[bio/nio/aio是什么？同步非阻塞如何理解？多路复用到底是个啥？帮你全部搞定！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1gozdYSEkR/?spm_id_from=333.1007.tianma.6-2-20.click&vd_source=52cd9a9deff2e511c87ff028e3bb01d2)
+
 [【IO】IO底层原理以及常见模型 - 酷酷- - 博客园 (cnblogs.com)](https://www.cnblogs.com/kukuxjx/p/17354520.html)
