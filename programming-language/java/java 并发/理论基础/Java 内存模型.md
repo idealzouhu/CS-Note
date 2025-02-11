@@ -43,15 +43,23 @@ Java内存模型的规定如下：
 Happens-Before 原则主要有：
 
 - 顺序性规则：一个线程内，按照代码顺序书写在前面的操作 **happens-before**  发生于书写在后面的操作。
-- volatile 规则：对一个 `volatile` 变量的写操作 `A` **happens-before** 对该 `volatile` 变量的后续读操作 `B`。
+- `volatile` 规则：对一个 `volatile` 变量的写操作 `A` **happens-before** 对该 `volatile` 变量的后续读操作 `B`。
 - 传递性规则：如果  A 操作 **happens-before**  B 操作，且 B 操作 **happens-before**  C 操作，那么 A 操作 **happens-before**   C 操作。
 - 监视锁规则：对一个锁的unlock操作先行发生于后面对同一个锁的lock操作
-- start() 规则：如果线程 A 执行 `ThreadB.start()` 操作启动线程 B，那么线程 A 的 `ThreadB.start()` 操作 **happens-before**  线程 B 中的任意操作。
-- join() 规则:  如果线程 A 执行 `threadB.join()` 操作并成功返回，那么线程 B 中的任意操作先行发生于线程 A 的 `ThreadB.join()` 操作。
+- `start()` 规则：如果线程 A 执行 `ThreadB.start()` 操作启动线程 B，那么线程 A 的 `ThreadB.start()` 操作 **happens-before**  线程 B 中的任意操作。
+- `join()` 规则:  如果线程 A 执行 `threadB.join()` 操作并成功返回，那么线程 B 中的任意操作先行发生于线程 A 的 `ThreadB.join()` 操作。
 
   
 
+#### 为什么需要 happens-before 原则
 
+Happens-Before 原则主要是为了平衡程序员的需求、编译器和处理器的需求。
+
+| 目标                    | 程序员的需求                       | 编译器和处理器的需求               |
+| ----------------------- | ---------------------------------- | ---------------------------------- |
+| **主要诉求**            | 可理解的、符合预期的执行顺序       | 最大化性能，减少执行时间和内存访问 |
+| **约束**                | 程序行为应按预期顺序执行，避免错误 | 尽量减少约束，进行重排序和优化     |
+| **Happens-Before 原则** |                                    |                                    |
 
 
 

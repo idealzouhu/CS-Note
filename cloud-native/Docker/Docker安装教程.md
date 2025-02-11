@@ -55,7 +55,7 @@ Docker Engine 通常用于服务器环境，例如在云服务器、虚拟机或
 
 在windows系统，安装教程主要为：
 
-- 访问[Install Docker Desktop on Windows | Docker Docs](https://docs.docker.com/desktop/install/windows-install/)， 下载程序
+- 访问 [Install Docker Desktop on Windows | Docker Docs](https://docs.docker.com/desktop/install/windows-install/)， 下载程序
 - 按照安装向导上的说明授权安装程序并继续安装，安装完成后重启电脑
 - 重启后，接受协议并设置 WSL 更新方式即可
 
@@ -71,7 +71,7 @@ Docker Engine 通常用于服务器环境，例如在云服务器、虚拟机或
 
 查看安装的 docker 和 wsl 版本 
 
-```
+```shell
 C:\Users\zouhu>docker -v
 Docker version 24.0.7, build afdd53b
 
@@ -98,6 +98,30 @@ Windows 版本： 10.0.19045.3803
 (1) 打开Windows功能中的 `适用于Linux的Windows子系统` 
 
 ![image-20231231153029845](images/image-20231231153029845.png)
+
+
+
+2.4 手动安装 WSL
+
+```
+C:\Users\zouhu>wsl --install
+请求的操作需要提升。
+正在安装: 虚拟机平台
+已安装 虚拟机平台。
+正在安装: 适用于 Linux 的 Windows 子系统
+已安装 适用于 Linux 的 Windows 子系统。
+正在安装: Ubuntu
+已安装 Ubuntu。
+请求的操作成功。直到重新启动系统前更改将不会生效。
+
+C:\Users\zouhu>wsl --set-default-version 2
+有关与 WSL 2 关键区别的信息，请访问 https://aka.ms/wsl2
+
+```
+
+
+
+### 2.4 报错 Docker Desktop - Unexpected WSL error
 
 
 
@@ -180,6 +204,14 @@ sudo apt-get install ./docker-desktop-<version>-<arch>.deb
 ```
 
 安装完成后，重启电脑即可。
+
+
+
+
+
+## 四、常见问题
+
+- Win10 家庭版不支持 Hyper-V, 从而不支持 WSL2
 
 
 

@@ -25,14 +25,6 @@ Vue 的两个核心功能：
 
 
 
-
-
-### 1.3 
-
-
-
-
-
 ## 二、Vue 架构
 
 ### 2.1 Vue 框架采用 MVMM 设计模式
@@ -59,10 +51,6 @@ G --> H(真实DOM)
 ```
 
 在底层机制中，Vue 会将[模板](https://cn.vuejs.org/guide/essentials/template-syntax.html)编译成高度优化的 JavaScript 代码。结合响应式系统，当应用状态变更时，Vue 能够智能地推导出需要重新渲染的组件的最少数量，并应用最少的 DOM 操作。
-
-
-
-
 
 
 

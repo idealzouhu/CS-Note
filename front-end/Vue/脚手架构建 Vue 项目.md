@@ -35,7 +35,49 @@
 
 
 
-
+```
+my-vue-project/
+├── node_modules/                  # 项目依赖（自动生成）
+├── public/                        # 静态文件（通常不需要 Webpack 处理）
+│   ├── index.html                 # 入口 HTML 文件
+│   └── favicon.ico                # 网站图标
+├── src/                           # 源代码
+│   ├── assets/                    # 静态资源（图片、样式、字体等）
+│   │   ├── logo.png
+│   │   └── styles.css
+│   ├── components/                # Vue 组件
+│   │   ├── Header.vue
+│   │   ├── Footer.vue
+│   │   └── MyComponent.vue
+│   ├── directives/                # 自定义指令（可选）
+│   │   └── v-focus.js
+│   ├── router/                    # 路由配置
+│   │   └── index.js               # 路由实例
+│   ├── store/                     # 状态管理（Vuex）
+│   │   ├── index.js               # Vuex store 配置
+│   │   └── modules/               # Vuex modules
+│   ├── views/                     # 视图组件（通常是页面级别的组件）
+│   │   ├── Home.vue
+│   │   └── About.vue
+│   ├── App.vue                    # 根组件
+│   ├── main.js                    # 入口 JavaScript 文件
+│   └── styles/                    # 全局样式
+│       └── global.css
+├── tests/                         # 测试代码（单元测试、E2E 测试）
+│   ├── unit/                      # 单元测试
+│   │   ├── App.spec.js
+│   │   └── MyComponent.spec.js
+│   └── e2e/                       # 端到端测试
+│       └── test.spec.js
+├── .gitignore                     # Git 忽略文件
+├── babel.config.js                # Babel 配置
+├── eslint.config.js               # ESLint 配置
+├── jsconfig.json                  # JavaScript 配置（VS Code 支持）
+├── package.json                   # 项目依赖和脚本配置
+├── README.md                      # 项目说明文档
+├── vue.config.js                  # Vue CLI 配置（如果使用 Vue CLI）
+└── vite.config.js                 # Vite 配置（如果使用 Vite）
+```
 
 
 

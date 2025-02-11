@@ -141,11 +141,7 @@ public class ThreadLocal<T> {
 
 
 
-
-
 ## 三、ThreadLocal 的局限性
-
-
 
 ### 可能存在的内存泄露问题
 
