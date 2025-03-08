@@ -242,6 +242,20 @@ s.charAt(i)  = ‘b’
 
 
 
+String 和 StringBuilder 相互转换
+
+```java
+String str = "Hello, World!";
+StringBuilder sb = new StringBuilder(str); // 通过构造函数转换
+
+StringBuilder sb = new StringBuilder("Hello, World!");
+String str = sb.toString(); // 转换为 String
+```
+
+
+
+
+
 ## 排序
 
 `Collections.sort()` 方法接受一个 `List` 参数，并对其进行升序排序。

@@ -58,11 +58,24 @@ ORDER BY time
 
 - `EXISTS` 是一个用于子查询的操作符，通常用于检查子查询是否返回任何行。如果子查询至少返回一行数据，`EXISTS` 就返回 `TRUE`。
 
+```
+# 子查询检查每个部门是否有员工。它会返回所有符合条件的员工记录。如果部门存在员工，EXISTS 将返回 TRUE
+SELECT department_id, department_name
+FROM departments
+WHERE EXISTS (
+    SELECT 1
+    FROM employees
+    WHERE employees.department_id = departments.department_id
+);
+```
+
 
 
 ### 集合操作符
 
 - `IN` 是一个用于比较的操作符，用于判断某个值是否在指定的列表、子查询或范围内。如果某个值在列表、范围或子查询的返回结果中，则 `IN` 返回 `TRUE`。
+
+
 
 
 
