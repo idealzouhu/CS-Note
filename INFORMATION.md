@@ -52,3 +52,6 @@ https://gitee.com/monday-pro/book
 
 
 
+### 软考资料
+
+[README.md · 大文/SoftwareDesignEngineerReviewMaterials - 码云 - 开源中国](https://gitee.com/wendygitee/SoftwareDesignEngineerReviewMaterials/blob/master/README.md)
