@@ -89,22 +89,35 @@ Windows 版本： 10.0.19045.3803
 
 ### 2.3 可能出现的问题
 
+#### 2.3.1  WSL 软件问题
+
 在 Docker 软件中，WSL 扮演着重要的角色。如果后续 WSL 软件出现了问题，会导致 Docker Desktop 出现下面的错误
 
 ![image-20231231143600721](images/image-20231231143600721.png)
 
+具体错误信息为：
+
+```
+deploying WSL2 distributions
+ensuring main distro is deployed: deploying "docker-desktop": importing WSL distro "当前计算机配置不支持 WSL2。\r\n请启用“虚拟机平台”可选组件，并确保在 BIOS 中启用虚拟化。\r\n通过运行以下命令启用“虚拟机平台”: wsl.exe --install --no-distribution\r\n有关信息，请访问 https://aka.ms/enablevirtualization\r\n错误代码: Wsl/Service/RegisterDistro/CreateVm/HCS/HCS_E_HYPERV_NOT_INSTALLED\r\n" output="docker-desktop": exit code: 4294967295: running WSL command wsl.exe C:\WINDOWS\System32\wsl.exe --import docker-desktop <HOME>\AppData\Local\Docker\wsl\main C:\Program Files\Docker\Docker\resources\wsl\wsl-bootstrap.tar --version 2: 当前计算机配置不支持 WSL2。
+请启用“虚拟机平台”可选组件，并确保在 BIOS 中启用虚拟化。
+通过运行以下命令启用“虚拟机平台”: wsl.exe --install --no-distribution
+有关信息，请访问 https://aka.ms/enablevirtualization
+错误代码: Wsl/Service/RegisterDistro/CreateVm/HCS/HCS_E_HYPERV_NOT_INSTALLED
+: exit status 0xffffffff
+checking if isocache exists: CreateFile \\wsl$\docker-desktop-data\isocache\: The network name cannot be found.
+```
+
 解决方案：
 
-(1) 打开Windows功能中的 `适用于Linux的Windows子系统` 
+(1) 打开Windows功能中的 `适用于Linux的Windows子系统` 和 `虚拟机平台`。
 
 ![image-20231231153029845](images/image-20231231153029845.png)
 
+(2) 检查 wsl 状态
 
-
-2.4 手动安装 WSL
-
-```
-C:\Users\zouhu>wsl --install
+```cmd
+$wsl --install
 请求的操作需要提升。
 正在安装: 虚拟机平台
 已安装 虚拟机平台。
@@ -114,14 +127,59 @@ C:\Users\zouhu>wsl --install
 已安装 Ubuntu。
 请求的操作成功。直到重新启动系统前更改将不会生效。
 
-C:\Users\zouhu>wsl --set-default-version 2
+
+# 以管理员身份运行 PowerShell, 下载并安装 WSL 2 内核（如果未安装）
+$wsl --install --no-distribution
+操作成功完成。
+
+# 手动设置 WSL 2 为默认版本
+$wsl --set-default-version 2
 有关与 WSL 2 关键区别的信息，请访问 https://aka.ms/wsl2
 
+
+wsl --shutdown
+
+# 保证 Hyper-V 正常
+bcdedit /set hypervisorlaunchtype auto
+操作成功完成。
 ```
 
 
 
-### 2.4 报错 Docker Desktop - Unexpected WSL error
+
+
+（3）重新安装  **Docker Desktop**
+
+重新打开软件即可，Docker Desktop 软件会自动安装 WSL 发行版
+
+```
+# 检查 wsl 状态
+$ wsl --status
+默认版本: 2
+
+# 显示了当前系统中安装的 WSL发行版
+$ wsl --list --verbose
+  NAME              STATE           VERSION
+* docker-desktop    Stopped         2
+```
+
+注意：**Win10 家庭版不支持 Hyper-V, 从而不支持 WSL2**。Windows 家庭版默认不支持 **完整的 Hyper-V 功能**（比如你不能直接安装 Hyper-V 管理器创建虚拟机），但 **WSL2 仍然可以运行**。这是因为**WSL2 使用的是“轻量级 Hyper-V”**
+
+
+
+2.3.2 
+
+**问题描述**
+
+在启动的时候，报错，具体信息如下：
+
+![](images/image-20250626204936140.png)
+
+
+
+**解决方案**
+
+猜测是网络问题，等一会就好了
 
 
 

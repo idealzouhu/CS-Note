@@ -21,7 +21,11 @@ VMware Workstation Player 和  VMware Workstation 区别主要在于：
 
 ## 1.2 VMware Workstation Player 安装
 
+按照引导程序安装即可。
 
+在安装过程中，我们需要注意：
+
+![image-20250626141240468](images/image-20250626141240468.png)
 
 
 
